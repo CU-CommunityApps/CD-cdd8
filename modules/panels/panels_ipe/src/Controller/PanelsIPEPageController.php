@@ -1,9 +1,5 @@
 <?php
 
-/**
- * @file
- */
-
 namespace Drupal\panels_ipe\Controller;
 
 use Drupal\Core\Ajax\AjaxResponse;
@@ -121,7 +117,7 @@ class PanelsIPEPageController extends ControllerBase {
     $panels_display = $this->panelsStorage->load($panels_storage_type, $panels_storage_id);
 
     // If a temporary configuration for this variant exists, use it.
-    if ($variant_config = $this->tempStore->get($panels_display->id())) {
+    if ($variant_config = $this->tempStore->get($panels_display->getTempStoreId())) {
       $panels_display->setConfiguration($variant_config);
     }
 
@@ -144,7 +140,7 @@ class PanelsIPEPageController extends ControllerBase {
     $panels_display = $this->loadPanelsDisplay($panels_storage_type, $panels_storage_id);
 
     // If a temporary configuration for this variant exists, use it.
-    $temp_store_key = $panels_display->id();
+    $temp_store_key = $panels_display->getTempStoreId();
     if ($variant_config = $this->tempStore->get($temp_store_key)) {
       $this->tempStore->delete($temp_store_key);
     }
@@ -174,7 +170,7 @@ class PanelsIPEPageController extends ControllerBase {
     $base_path = base_path();
     $data = [];
     foreach ($layouts as $id => $layout) {
-      $icon = $layout->getIconPath() ?: drupal_get_path('module', 'panels') . '/images/no-layout-preview.png';
+      $icon = $layout->getIconPath() ?: drupal_get_path('module', 'panels') . '/layouts/no-layout-preview.png';
       $data[] = [
         'id' => $id,
         'label' => $layout->getLabel(),
