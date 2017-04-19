@@ -1,0 +1,10 @@
+uuid: 7da908b7-1dc0-477f-be65-6177c6980daf
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.complex
+label: Complex
+targetEntityType: node
+cache: true
