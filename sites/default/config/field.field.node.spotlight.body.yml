@@ -1,16 +1,16 @@
-uuid: df38adfc-2efd-40a7-929c-798b4ce2d68a
+uuid: 21578bcd-c3f3-425d-9c9c-7354e36dcc27
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.basic_page
+    - node.type.spotlight
   module:
     - text
-id: node.basic_page.body
+id: node.spotlight.body
 field_name: body
 entity_type: node
-bundle: basic_page
+bundle: spotlight
 label: Body
 description: ''
 required: false

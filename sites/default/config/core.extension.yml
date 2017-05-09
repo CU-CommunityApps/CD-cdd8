@@ -1,10 +1,13 @@
 module:
   admin_toolbar: 0
   admin_toolbar_tools: 0
+  better_field_descriptions: 0
   big_pipe: 0
   block: 0
   block_content: 0
   breakpoint: 0
+  chosen: 0
+  chosen_lib: 0
   ckeditor: 0
   coffee: 0
   config: 0
@@ -21,9 +24,9 @@ module:
   diff: 0
   ds: 0
   ds_devel: 0
-  ds_extras: 0
   dynamic_page_cache: 0
   editor: 0
+  editor_advanced_link: 0
   entity: 0
   entity_browser: 0
   entity_browser_example: 0
@@ -57,7 +60,6 @@ module:
   path: 0
   quickedit: 0
   rdf: 0
-  redis: 0
   responsive_image: 0
   search: 0
   snippet_manager: 0
@@ -71,12 +73,15 @@ module:
   twig_tweak: 0
   update: 0
   user: 0
+  vertical_tabs_config: 0
   views: 0
   views_ui: 0
+  ds_extras: 2
 theme:
   stable: 0
   classy: 0
   bartik: 0
+  seven: 0
 _core:
   default_config_hash: m2GVq11UAOVuNgj8x0t5fMOPujpvQQ_zxLoaly1BMEU
 profile: null
