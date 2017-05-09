@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.spotlight.body
+    - field.field.node.spotlight.field_teaser
     - node.type.spotlight
   module:
     - field_layout
@@ -20,15 +21,17 @@ targetEntityType: node
 bundle: spotlight
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
+  field_teaser:
+    type: text_default
+    weight: 1
+    region: content
+    label: above
+    settings: {  }
     third_party_settings: {  }
-    region: content
   links:
-    weight: 100
+    weight: 0
     region: content
-hidden: {  }
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
