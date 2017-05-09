@@ -5,6 +5,12 @@ dependencies:
   enforced:
     module:
       - entity_browser_example
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
 _core:
   default_config_hash: 9tkUrs5_jvuW1b9tMuT7F6JgIjuaeys9XIV49iKTbKU
 name: 'Entity browser test'
@@ -12,5 +18,5 @@ type: entity_browser_test
 description: 'Testing entity browser.'
 help: ''
 new_revision: false
-preview_mode: 1
-display_submitted: true
+preview_mode: 0
+display_submitted: false
