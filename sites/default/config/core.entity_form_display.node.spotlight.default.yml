@@ -1,11 +1,11 @@
-uuid: c5dfc638-c745-4a5b-a5a7-c185963f5f27
+uuid: 66d69db4-e0c6-4fa7-a324-df9f46679b8b
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.basic_page.body
-    - field.field.node.basic_page.field_teaser
-    - node.type.basic_page
+    - field.field.node.spotlight.body
+    - field.field.node.spotlight.field_teaser
+    - node.type.spotlight
   module:
     - field_layout
     - layout_discovery
@@ -15,9 +15,9 @@ third_party_settings:
   field_layout:
     id: layout_onecol
     settings: {  }
-id: node.basic_page.default
+id: node.spotlight.default
 targetEntityType: node
-bundle: basic_page
+bundle: spotlight
 mode: default
 content:
   body:
@@ -49,6 +49,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   title:
     type: string_textfield
     weight: 0
@@ -67,5 +74,4 @@ content:
     region: content
     third_party_settings: {  }
 hidden:
-  promote: true
   sticky: true

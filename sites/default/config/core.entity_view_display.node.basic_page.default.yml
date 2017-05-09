@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.basic_page.body
+    - field.field.node.basic_page.field_teaser
     - node.type.basic_page
   module:
     - field_layout
@@ -25,6 +26,13 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_teaser:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
     region: content
   links:
     weight: 100

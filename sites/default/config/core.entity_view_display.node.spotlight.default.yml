@@ -1,11 +1,11 @@
-uuid: d43b2473-1f19-46d1-9e4a-68221b0ef211
+uuid: 94b60cc2-0082-414f-bb04-e5df7ccd4647
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.news.body
-    - field.field.node.news.field_teaser
-    - node.type.news
+    - field.field.node.spotlight.body
+    - field.field.node.spotlight.field_teaser
+    - node.type.spotlight
   module:
     - field_layout
     - layout_discovery
@@ -15,9 +15,9 @@ third_party_settings:
   field_layout:
     id: layout_onecol
     settings: {  }
-id: node.news.default
+id: node.spotlight.default
 targetEntityType: node
-bundle: news
+bundle: spotlight
 mode: default
 content:
   body:
