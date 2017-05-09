@@ -1,6 +1,7 @@
 module:
   admin_toolbar: 0
   admin_toolbar_tools: 0
+  better_field_descriptions: 0
   big_pipe: 0
   block: 0
   block_content: 0
@@ -24,6 +25,7 @@ module:
   ds_extras: 0
   dynamic_page_cache: 0
   editor: 0
+  editor_advanced_link: 0
   entity: 0
   entity_browser: 0
   entity_browser_example: 0
@@ -71,6 +73,7 @@ module:
   twig_tweak: 0
   update: 0
   user: 0
+  vertical_tabs_config: 0
   views: 0
   views_ui: 0
 theme:
