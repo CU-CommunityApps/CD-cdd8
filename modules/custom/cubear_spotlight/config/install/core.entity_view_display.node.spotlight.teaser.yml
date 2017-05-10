@@ -4,6 +4,8 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.spotlight.body
+    - field.field.node.spotlight.field_image_single
+    - field.field.node.spotlight.field_link_single
     - field.field.node.spotlight.field_teaser
     - node.type.spotlight
   module:
@@ -34,3 +36,5 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
+  field_image_single: true
+  field_link_single: true
