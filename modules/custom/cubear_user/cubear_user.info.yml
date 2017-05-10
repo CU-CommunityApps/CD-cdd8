@@ -1,0 +1,8 @@
+name: User
+description: 'Provide User related configuration.'
+type: module
+core: 8.x
+dependencies:
+  - user
+package: 'CD Drupal 8'
+version: 8.x-1.0-alpha1
