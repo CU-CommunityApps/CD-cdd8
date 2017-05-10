@@ -3,6 +3,7 @@ description: 'Provides Image media bundle and related configuration. '
 type: module
 core: 8.x
 dependencies:
+  - cubear_core
   - field
   - field_layout
   - file
