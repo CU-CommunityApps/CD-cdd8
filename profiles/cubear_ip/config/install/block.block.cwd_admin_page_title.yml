@@ -2,11 +2,11 @@ langcode: en
 status: true
 dependencies:
   theme:
-    - bartik
-id: bartik_page_title
-theme: bartik
+    - cwd_admin
+id: cwd_admin_page_title
+theme: cwd_admin
 region: content
-weight: -30
+weight: -4
 provider: null
 plugin: page_title_block
 settings:

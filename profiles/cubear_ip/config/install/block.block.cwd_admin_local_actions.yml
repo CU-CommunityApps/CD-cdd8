@@ -2,11 +2,11 @@ langcode: en
 status: true
 dependencies:
   theme:
-    - seven
-id: seven_local_actions
-theme: seven
+    - cwd_admin
+id: cwd_admin_local_actions
+theme: cwd_admin
 region: content
-weight: -10
+weight: -2
 provider: null
 plugin: local_actions_block
 settings:

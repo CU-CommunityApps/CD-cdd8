@@ -5,10 +5,10 @@ dependencies:
     - system
     - user
   theme:
-    - seven
-id: seven_login
-theme: seven
-region: header
+    - cwd_base_bootstrap
+id: cwd_base_bootstrap_login
+theme: cwd_base_bootstrap
+region: sidebar_first
 weight: 0
 provider: null
 plugin: user_login_block

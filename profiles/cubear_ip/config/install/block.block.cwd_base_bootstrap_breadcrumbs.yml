@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
-id: breadcrumbs
-theme: bartik
+    - cwd_base_bootstrap
+id: cwd_base_bootstrap_breadcrumbs
+theme: cwd_base_bootstrap
 region: highlighted
 weight: 0
 provider: null

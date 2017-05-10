@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - seven
-id: seven_branding
-theme: seven
+    - cwd_base_bootstrap
+id: cwd_base_bootstrap_branding
+theme: cwd_base_bootstrap
 region: header
 weight: 0
 provider: null

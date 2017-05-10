@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
-id: bartik_branding
-theme: bartik
+    - cwd_admin
+id: cwd_admin_branding
+theme: cwd_admin
 region: header
 weight: 0
 provider: null

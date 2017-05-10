@@ -6,9 +6,9 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
-id: bartik_admin
-theme: bartik
+    - cwd_base_bootstrap
+id: cwd_base_bootstrap_admin
+theme: cwd_base_bootstrap
 region: sidebar_first
 weight: 1
 provider: null

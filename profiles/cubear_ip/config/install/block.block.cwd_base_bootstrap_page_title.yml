@@ -2,9 +2,9 @@ langcode: en
 status: true
 dependencies:
   theme:
-    - seven
-id: seven_page_title
-theme: seven
+    - cwd_base_bootstrap
+id: cwd_base_bootstrap_page_title
+theme: cwd_base_bootstrap
 region: content
 weight: -30
 provider: null

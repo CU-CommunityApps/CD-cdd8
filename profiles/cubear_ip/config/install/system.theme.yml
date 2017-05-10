@@ -1,2 +1,2 @@
-admin: seven
-default: bartik
+admin: cwd_admin
+default: cwd_base_bootstrap

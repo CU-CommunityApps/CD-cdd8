@@ -2,11 +2,11 @@ langcode: en
 status: true
 dependencies:
   theme:
-    - bartik
-id: bartik_local_tasks
-theme: bartik
+    - cwd_admin
+id: cwd_admin_local_tasks
+theme: cwd_admin
 region: content
-weight: -20
+weight: -3
 provider: null
 plugin: local_tasks_block
 settings:

@@ -1,22 +1,25 @@
 langcode: en
 status: true
 dependencies:
+  config:
+    - system.menu.admin
   module:
     - system
-    - user
   theme:
     - seven
-id: seven_login
+id: seven_admin
 theme: seven
 region: header
-weight: 0
+weight: 1
 provider: null
-plugin: user_login_block
+plugin: 'system_menu_block:admin'
 settings:
-  id: user_login_block
-  label: 'User login'
-  provider: user
+  id: 'system_menu_block:admin'
+  label: Administration
+  provider: system
   label_display: visible
+  level: 1
+  depth: 0
 visibility:
   request_path:
     id: request_path

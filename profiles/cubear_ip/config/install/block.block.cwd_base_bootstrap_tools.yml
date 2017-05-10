@@ -1,22 +1,25 @@
 langcode: en
 status: true
 dependencies:
+  config:
+    - system.menu.tools
   module:
     - system
-    - user
   theme:
-    - seven
-id: seven_login
-theme: seven
-region: header
+    - cwd_base_bootstrap
+id: cwd_base_bootstrap_tools
+theme: cwd_base_bootstrap
+region: sidebar_first
 weight: 0
 provider: null
-plugin: user_login_block
+plugin: 'system_menu_block:tools'
 settings:
-  id: user_login_block
-  label: 'User login'
-  provider: user
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
   label_display: visible
+  level: 1
+  depth: 0
 visibility:
   request_path:
     id: request_path

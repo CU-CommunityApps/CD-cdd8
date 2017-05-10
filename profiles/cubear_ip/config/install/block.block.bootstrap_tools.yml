@@ -6,10 +6,10 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
-id: bartik_tools
-theme: bartik
-region: sidebar_first
+    - bootstrap
+id: bootstrap_tools
+theme: bootstrap
+region: sidebar_second
 weight: 0
 provider: null
 plugin: 'system_menu_block:tools'
@@ -20,9 +20,4 @@ settings:
   label_display: visible
   level: 1
   depth: 0
-visibility:
-  request_path:
-    id: request_path
-    pages: "/node/add/*\r\n/node/*/edit"
-    negate: true
-    context_mapping: {  }
+visibility: {  }
