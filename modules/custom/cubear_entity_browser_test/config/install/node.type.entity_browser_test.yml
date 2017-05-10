@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - entity_browser_example
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Entity browser test'
+type: entity_browser_test
+description: 'Testing entity browser.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false
