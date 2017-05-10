@@ -1,4 +1,4 @@
-name: 'CD Drupal 8: Install profile'
+name: 'CU Bear: Install profile'
 type: profile
 core: 8.x
 dependencies:
@@ -43,7 +43,7 @@ dependencies:
 themes:
   - bartik
   - seven
-package: 'CD Drupal 8: Install profile'
+package: 'CU Bear: Install profile'
 distribution:
-  name: 'CD Drupal 8: Install profile'
-version: 8.x-1.0-alpha1
+  name: 'CU Bear: Install profile'
+version: 8.x-1.0-alpha2
