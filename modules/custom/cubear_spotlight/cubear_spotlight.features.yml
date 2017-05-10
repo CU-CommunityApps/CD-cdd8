@@ -1,1 +1,4 @@
 bundle: cubear
+excluded:
+  - field.storage.node.field_link_single
+required: true

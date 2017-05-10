@@ -10,6 +10,8 @@ dependencies:
   - field
   - file
   - image
+  - link
+  - media_entity
   - node
   - taxonomy
   - text

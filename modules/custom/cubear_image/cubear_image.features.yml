@@ -1,4 +1,5 @@
 bundle: cubear
 excluded:
   - field.storage.media.field_media_image
+  - field.storage.node.field_image_single
 required: true
