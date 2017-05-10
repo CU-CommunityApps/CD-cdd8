@@ -13,7 +13,6 @@ dependencies:
   - contact
   - contextual
   - cubear_ip
-  - cubear_ip_cubear_core
   - datetime
   - dblog
   - dynamic_page_cache
@@ -41,7 +40,9 @@ dependencies:
   - views
   - views_ui
 themes:
-  - bartik
+  - bootstrap
+  - cwd_admin
+  - cwd_base_bootstrap
   - seven
 package: 'CU Bear: Install profile'
 distribution:
