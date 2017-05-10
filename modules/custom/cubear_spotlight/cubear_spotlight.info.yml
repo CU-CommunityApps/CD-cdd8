@@ -6,7 +6,9 @@ dependencies:
   - cubear_core
   - field
   - field_layout
+  - image
   - layout_discovery
+  - link
   - menu_ui
   - node
   - path

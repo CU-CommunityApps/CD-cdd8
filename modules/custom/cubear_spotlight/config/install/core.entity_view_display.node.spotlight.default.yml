@@ -3,11 +3,15 @@ status: true
 dependencies:
   config:
     - field.field.node.spotlight.body
+    - field.field.node.spotlight.field_image_single
+    - field.field.node.spotlight.field_link_single
     - field.field.node.spotlight.field_teaser
     - node.type.spotlight
   module:
     - field_layout
+    - image
     - layout_discovery
+    - link
     - text
     - user
 third_party_settings:
@@ -25,6 +29,27 @@ content:
     weight: 1
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_image_single:
+    weight: 3
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_link_single:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   links:
     weight: 0
