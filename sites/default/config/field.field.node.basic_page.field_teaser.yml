@@ -1,0 +1,23 @@
+uuid: 9f6ff7b8-0f1d-4ad7-9f2e-d959ca131948
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser
+    - node.type.basic_page
+  module:
+    - text
+_core:
+  default_config_hash: O2tcI8U0WLrA5djxFJltoIatbpxBohI93m_1UXsP0Lg
+id: node.basic_page.field_teaser
+field_name: field_teaser
+entity_type: node
+bundle: basic_page
+label: 'Teaser (summary)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

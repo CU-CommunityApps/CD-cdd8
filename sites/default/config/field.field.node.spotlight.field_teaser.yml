@@ -1,0 +1,23 @@
+uuid: 194dff74-8af7-4fa4-9c03-0f357aa83627
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser
+    - node.type.spotlight
+  module:
+    - text
+_core:
+  default_config_hash: bUqp2jRwKN08RFzkY5HK_TcYmNyA4jj4ITLQhpwRM5c
+id: node.spotlight.field_teaser
+field_name: field_teaser
+entity_type: node
+bundle: spotlight
+label: 'Teaser (summary)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
