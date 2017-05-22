@@ -20,9 +20,9 @@ function cubear_ip_install() {
   // Set front page to "node".
   \Drupal::configFactory()->getEditable('system.site')->set('page.front', '/node')->save(TRUE);
 
-  // Allow visitor account creation with administrative approval.
+  // Restrict visitor account creation to administrator role.
   $user_settings = \Drupal::configFactory()->getEditable('user.settings');
-  $user_settings->set('register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL)->save(TRUE);
+  $user_settings->set('register', USER_REGISTER_ADMINISTRATORS_ONLY)->save(TRUE);
 
   // Enable default permissions for system roles.
   user_role_grant_permissions(RoleInterface::ANONYMOUS_ID, ['access comments']);
@@ -69,18 +69,34 @@ function cubear_ip_install() {
   user_role_grant_permissions(RoleInterface::ANONYMOUS_ID, ['search content']);
   user_role_grant_permissions(RoleInterface::AUTHENTICATED_ID, ['search content']);
 
+  // Set the default and admin theme
+  \Drupal::configFactory()
+         ->getEditable('system.theme')
+         ->set('default', 'cwd_base_bootstrap')
+         ->set('admin', 'cwd_admin')
+         ->save(TRUE);
+
   // Enable the admin theme.
   \Drupal::configFactory()->getEditable('node.settings')->set('use_admin_theme', TRUE)->save(TRUE);
 
-// EXAMPLE
-// Create accounts for The Jibe team
-// $user_add = \Drupal\user\Entity\User::create();
-// $user_add->setUsername('Sheila Mullins');
-// $user_add->setEmail('sheila@example.com');
-// $user_add->setPassword(user_password());
-// $user_add->enforceIsNew();
-// $user_add->activate();
-// $user_add->roles[] = 'developer';
-// $res = $user_add->save();
+  //////////////////////
+  // EXAMPLE THINGSES
+  //////////////////////
+
+  // Create accounts for The Jibe team
+  // $user_add = \Drupal\user\Entity\User::create();
+  // $user_add->setUsername('Sheila Mullins');
+  // $user_add->setEmail('sheila@example.com');
+  // $user_add->setPassword(user_password());
+  // $user_add->enforceIsNew();
+  // $user_add->activate();
+  // $user_add->roles[] = 'developer';
+  // $res = $user_add->save();
+
+  // Disable the user pictures on nodes.
+  // \Drupal::configFactory()
+  //   ->getEditable('system.theme.global')
+  //   ->set('features.node_user_picture', FALSE)
+  //   ->save(TRUE);
 
 }
