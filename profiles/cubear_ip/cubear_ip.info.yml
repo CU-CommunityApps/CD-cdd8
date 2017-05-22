@@ -45,6 +45,6 @@ themes:
   - cwd_base_bootstrap
   - seven
 package: 'CU Bear: Install profile'
-distribution:
-  name: 'CU Bear: Install profile'
+#distribution:
+#  name: 'CU Bear: Install profile'
 version: 8.x-1.0-alpha2
