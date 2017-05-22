@@ -3,16 +3,13 @@ status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.entity_browser_test
-  enforced:
-    module:
-      - entity_browser_example
+    - node.type.entity_browser
   module:
     - text
-id: node.entity_browser_test.body
+id: node.entity_browser.body
 field_name: body
 entity_type: node
-bundle: entity_browser_test
+bundle: entity_browser
 label: Body
 description: ''
 required: false
@@ -20,5 +17,5 @@ translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  display_summary: true
+  display_summary: false
 field_type: text_with_summary

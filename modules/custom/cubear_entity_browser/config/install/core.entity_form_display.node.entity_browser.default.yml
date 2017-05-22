@@ -2,18 +2,15 @@ langcode: en
 status: true
 dependencies:
   config:
-    - entity_browser.browser.test_files
-    - entity_browser.browser.test_nodes
-    - field.field.node.entity_browser_test.body
-    - field.field.node.entity_browser_test.field_files
-    - field.field.node.entity_browser_test.field_files1
-    - field.field.node.entity_browser_test.field_files_over_ajax
-    - field.field.node.entity_browser_test.field_image_browser
-    - field.field.node.entity_browser_test.field_nodes
-    - node.type.entity_browser_test
-  enforced:
-    module:
-      - entity_browser_example
+    - entity_browser.browser.eb_files
+    - entity_browser.browser.eb_nodes
+    - field.field.node.entity_browser.body
+    - field.field.node.entity_browser.field_files
+    - field.field.node.entity_browser.field_files1
+    - field.field.node.entity_browser.field_files_over_ajax
+    - field.field.node.entity_browser.field_image_browser
+    - field.field.node.entity_browser.field_nodes
+    - node.type.entity_browser
   module:
     - entity_browser
     - field_layout
@@ -24,14 +21,14 @@ third_party_settings:
   field_layout:
     id: layout_onecol
     settings: {  }
-id: node.entity_browser_test.default
+id: node.entity_browser.default
 targetEntityType: node
-bundle: entity_browser_test
+bundle: entity_browser
 mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 31
+    weight: 4
     settings:
       rows: 9
       summary_rows: 3
@@ -40,104 +37,98 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   field_files:
-    type: entity_browser_entity_reference
-    weight: 32
+    weight: 6
     settings:
-      entity_browser: test_files
+      entity_browser: eb_files1
       field_widget_display: label
-      field_widget_display_settings: {  }
-      open: false
-      field_widget_edit: true
       field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_edit: true
+      open: false
+      field_widget_display_settings: {  }
     third_party_settings: {  }
+    type: entity_browser_entity_reference
     region: content
   field_files1:
-    type: entity_browser_entity_reference
-    weight: 33
+    weight: 5
     settings:
-      entity_browser: test_files1
+      entity_browser: eb_files
       field_widget_display: label
-      field_widget_display_settings: {  }
-      open: false
-      field_widget_edit: true
       field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_edit: true
+      open: false
+      field_widget_display_settings: {  }
     third_party_settings: {  }
+    type: entity_browser_entity_reference
     region: content
   field_files_over_ajax:
-    weight: 36
+    weight: 9
     settings:
-      entity_browser: test_files_ajax
+      entity_browser: eb_files_ajax
       field_widget_display: label
-      field_widget_edit: true
       field_widget_remove: true
-      selection_mode: selection_edit
+      selection_mode: selection_append
+      field_widget_edit: true
       open: false
       field_widget_display_settings: {  }
     third_party_settings: {  }
     type: entity_browser_entity_reference
     region: content
   field_image_browser:
-    weight: 35
+    weight: 8
     settings:
-      entity_browser: test_files
-      field_widget_edit: true
+      entity_browser: eb_files
       field_widget_remove: true
+      selection_mode: selection_append
+      preview_image_style: thumbnail
+      field_widget_edit: true
       open: false
+      view_mode: default
     third_party_settings: {  }
     type: entity_browser_file
     region: content
   field_nodes:
-    type: entity_browser_entity_reference
-    weight: 34
+    weight: 7
     settings:
-      entity_browser: test_nodes
+      entity_browser: eb_nodes
       field_widget_display: label
-      field_widget_display_settings: {  }
-      open: false
       field_widget_edit: true
       field_widget_remove: true
+      selection_mode: selection_append
+      open: false
+      field_widget_display_settings: {  }
     third_party_settings: {  }
+    type: entity_browser_entity_reference
     region: content
   path:
     type: path
-    weight: 30
+    weight: 3
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
-  promote:
-    type: boolean_checkbox
-    weight: 15
-    settings:
-      display_label: true
-    third_party_settings: {  }
-    region: content
-  sticky:
-    type: boolean_checkbox
-    weight: 16
-    settings:
-      display_label: true
-    third_party_settings: {  }
-    region: content
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    region: content
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 1
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
-    third_party_settings: {  }
     region: content
-hidden: {  }
+    third_party_settings: {  }
+hidden:
+  promote: true
+  sticky: true

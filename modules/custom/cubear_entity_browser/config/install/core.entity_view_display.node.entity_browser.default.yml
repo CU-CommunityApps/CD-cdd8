@@ -2,16 +2,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.entity_browser_test.body
-    - field.field.node.entity_browser_test.field_files
-    - field.field.node.entity_browser_test.field_files1
-    - field.field.node.entity_browser_test.field_files_over_ajax
-    - field.field.node.entity_browser_test.field_image_browser
-    - field.field.node.entity_browser_test.field_nodes
-    - node.type.entity_browser_test
-  enforced:
-    module:
-      - entity_browser_example
+    - field.field.node.entity_browser.body
+    - field.field.node.entity_browser.field_files
+    - field.field.node.entity_browser.field_files1
+    - field.field.node.entity_browser.field_files_over_ajax
+    - field.field.node.entity_browser.field_image_browser
+    - field.field.node.entity_browser.field_nodes
+    - node.type.entity_browser
   module:
     - field_layout
     - image
@@ -22,9 +19,9 @@ third_party_settings:
   field_layout:
     id: layout_onecol
     settings: {  }
-id: node.entity_browser_test.default
+id: node.entity_browser.default
 targetEntityType: node
-bundle: entity_browser_test
+bundle: entity_browser
 mode: default
 content:
   body:
@@ -35,14 +32,6 @@ content:
     third_party_settings: {  }
     region: content
   field_files:
-    weight: 102
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_files1:
     weight: 103
     label: above
     settings:
@@ -50,8 +39,16 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
+  field_files1:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   field_files_over_ajax:
-    weight: 106
+    weight: 104
     label: above
     settings:
       link: true
@@ -68,7 +65,7 @@ content:
     type: image
     region: content
   field_nodes:
-    weight: 104
+    weight: 106
     label: above
     settings:
       link: true
@@ -78,4 +75,6 @@ content:
   links:
     weight: 100
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }

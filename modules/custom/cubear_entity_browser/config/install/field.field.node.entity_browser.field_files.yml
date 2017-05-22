@@ -2,16 +2,16 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_files_over_ajax
-    - node.type.entity_browser_test
-id: node.entity_browser_test.field_files_over_ajax
-field_name: field_files_over_ajax
+    - field.storage.node.field_files
+    - node.type.entity_browser
+id: node.entity_browser.field_files
+field_name: field_files
 entity_type: node
-bundle: entity_browser_test
-label: 'Files (with auto loading)'
-description: ''
+bundle: entity_browser
+label: Files
+description: 'Attach files. Click on the link below and pick or upload them.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

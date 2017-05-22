@@ -1,18 +1,15 @@
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.entity_browser_test.body
-    - field.field.node.entity_browser_test.field_files
-    - field.field.node.entity_browser_test.field_files1
-    - field.field.node.entity_browser_test.field_files_over_ajax
-    - field.field.node.entity_browser_test.field_image_browser
-    - field.field.node.entity_browser_test.field_nodes
-    - node.type.entity_browser_test
-  enforced:
-    module:
-      - entity_browser_example
+    - field.field.node.entity_browser.body
+    - field.field.node.entity_browser.field_files
+    - field.field.node.entity_browser.field_files1
+    - field.field.node.entity_browser.field_files_over_ajax
+    - field.field.node.entity_browser.field_image_browser
+    - field.field.node.entity_browser.field_nodes
+    - node.type.entity_browser
   module:
     - field_layout
     - layout_discovery
@@ -22,9 +19,9 @@ third_party_settings:
   field_layout:
     id: layout_onecol
     settings: {  }
-id: node.entity_browser_test.teaser
+id: node.entity_browser.teaser
 targetEntityType: node
-bundle: entity_browser_test
+bundle: entity_browser
 mode: teaser
 content:
   body:

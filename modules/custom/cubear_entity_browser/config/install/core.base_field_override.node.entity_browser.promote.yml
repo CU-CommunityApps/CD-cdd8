@@ -2,11 +2,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.entity_browser_test
-id: node.entity_browser_test.promote
+    - node.type.entity_browser
+id: node.entity_browser.promote
 field_name: promote
 entity_type: node
-bundle: entity_browser_test
+bundle: entity_browser
 label: 'Promoted to front page'
 description: ''
 required: false

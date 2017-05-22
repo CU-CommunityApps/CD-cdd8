@@ -1,0 +1,40 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.files_entity_browser
+  module:
+    - views
+name: eb_files
+label: 'Entity browser for files'
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select files'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  2a1614aa-7714-417e-b589-2bbb9e113035:
+    settings:
+      upload_location: 'public://'
+      multiple: true
+      submit_text: 'Select files'
+      extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp docx xlsx pptx'
+    uuid: 2a1614aa-7714-417e-b589-2bbb9e113035
+    weight: 1
+    label: 'Upload files'
+    id: upload
+  ab19ba75-137b-4ce4-beea-f973a5255f63:
+    settings:
+      view: files_entity_browser
+      view_display: entity_browser_1
+      submit_text: 'Select entities'
+      auto_select: false
+    uuid: ab19ba75-137b-4ce4-beea-f973a5255f63
+    weight: 2
+    label: 'Files listing'
+    id: view
