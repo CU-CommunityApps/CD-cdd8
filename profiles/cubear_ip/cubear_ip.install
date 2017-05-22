@@ -71,4 +71,16 @@ function cubear_ip_install() {
 
   // Enable the admin theme.
   \Drupal::configFactory()->getEditable('node.settings')->set('use_admin_theme', TRUE)->save(TRUE);
+
+// EXAMPLE
+// Create accounts for The Jibe team
+// $user_add = \Drupal\user\Entity\User::create();
+// $user_add->setUsername('Sheila Mullins');
+// $user_add->setEmail('sheila@example.com');
+// $user_add->setPassword(user_password());
+// $user_add->enforceIsNew();
+// $user_add->activate();
+// $user_add->roles[] = 'developer';
+// $res = $user_add->save();
+
 }
