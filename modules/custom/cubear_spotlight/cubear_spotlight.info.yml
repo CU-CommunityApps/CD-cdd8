@@ -6,7 +6,6 @@ dependencies:
   - cubear_core
   - cubear_image
   - field
-  - field_layout
   - image
   - layout_discovery
   - link

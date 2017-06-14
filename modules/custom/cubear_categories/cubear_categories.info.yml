@@ -3,7 +3,6 @@ description: 'Provides Categories taxonomy vocabulary and related configuration.
 type: module
 core: 8.x
 dependencies:
-  - field_layout
   - layout_discovery
   - path
   - taxonomy

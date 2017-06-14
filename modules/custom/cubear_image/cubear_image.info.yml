@@ -5,7 +5,6 @@ core: 8.x
 dependencies:
   - cubear_core
   - field
-  - field_layout
   - file
   - image
   - layout_discovery

@@ -6,7 +6,6 @@ dependencies:
   - cubear_core
   - entity_browser
   - field
-  - field_layout
   - file
   - image
   - layout_discovery
