@@ -25,8 +25,7 @@ if (file_exists($local_settings)) {
 }
 $settings['install_profile'] = 'cubear_ip';
 
-if (defined('PANTHEON_ENVIRONMENT')){
+
 # Provide universal absolute path to the installation.
 $ps = json_decode($_SERVER['PRESSFLOW_SETTINGS'], TRUE);
 $settings['simplesamlphp_dir'] = $_ENV['HOME'] .'/code/private/simplesamlphp-1.14.2';
-}
