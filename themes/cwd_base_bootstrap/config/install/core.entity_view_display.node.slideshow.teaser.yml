@@ -1,0 +1,20 @@
+uuid: 53736226-d852-4cda-974c-7bac26bd7187
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slideshow.field_slides
+    - node.type.slideshow
+  module:
+    - user
+id: node.slideshow.teaser
+targetEntityType: node
+bundle: slideshow
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_slides: true

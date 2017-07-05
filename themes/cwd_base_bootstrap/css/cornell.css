@@ -198,6 +198,9 @@
 /* ~45px University Lockup */
 .cu-logo a {
   background: url("../images/cornell/cornell-reduced-red.svg") 0 0 no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
   background-size: 100%;
   display: block;
   width: 168px;
@@ -295,6 +298,9 @@
   overflow: hidden;
   text-indent: -1000em;
   background: #a01114 url("../images/cornell/icon_search32.png") 50% 50% no-repeat;
+  -webkit-background-size: 16px;
+  -moz-background-size: 16px;
+  -o-background-size: 16px;
   background-size: 16px;
 }
 
@@ -334,6 +340,9 @@
 #mobile-nav {
   margin-left: 3px;
   background-image: url("../images/cornell/icon_veggieburger_white.png");
+  -webkit-background-size: 20px;
+  -moz-background-size: 20px;
+  -o-background-size: 20px;
   background-size: 20px;
 }
 
@@ -587,6 +596,18 @@
 
   .cu-seal .cu-logo a {
     background-image: url("../images/cornell/bold_cornell_seal_simple_b31b1b.svg") !important;
+  }
+}
+@media (max-width: 767px) {
+  #cu-search #cu-search-query {
+    width: 20.125em;
+    font-size: 16px;
+    height: 2.1em;
+  }
+}
+@media (max-width: 479px) {
+  #cu-search #cu-search-query {
+    width: 100%;
   }
 }
 

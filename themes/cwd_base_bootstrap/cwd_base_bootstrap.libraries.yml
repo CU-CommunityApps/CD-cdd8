@@ -4,6 +4,7 @@ global-styling:
       ../bootstrap/css/3.3.7/overrides.min.css: {}
       css/base.css: {}
       css/cornell.css: {}
+      css/cwd_slider.css: {}
       fonts/font-awesome.min.css: {}
       fonts/material-design-iconic-font.min.css: {}
       fonts/cornell-custom.css: {}
@@ -11,6 +12,13 @@ global-styling:
       css/drupal.css: {}
   js:
     js/cwd.js: {}
+
+header-scripts:
+  header: true
+  js:
+    js/cwd_slider.js: {}
+  dependencies:
+    - core/jquery
 
 bootstrap-scripts:
   js:

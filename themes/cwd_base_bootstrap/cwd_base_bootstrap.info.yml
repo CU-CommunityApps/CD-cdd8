@@ -21,5 +21,6 @@ regions:
 
 libraries:
   - 'cwd_base_bootstrap/global-styling'
+  - 'cwd_base_bootstrap/header-scripts'
   - 'cwd_base_bootstrap/bootstrap-scripts'
 

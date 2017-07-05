@@ -1,0 +1,30 @@
+uuid: 18c97acb-ba44-449d-9143-cd55bdf2fcac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.slideshow.field_slides
+    - node.type.slideshow
+  module:
+    - entity_reference_revisions
+    - user
+id: node.slideshow.default
+targetEntityType: node
+bundle: slideshow
+mode: default
+content:
+  field_slides:
+    type: entity_reference_revisions_entity_view
+    weight: 102
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,30 @@
+uuid: 53bc5c6b-5847-48e3-90ad-0058ef5166f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slides
+    - node.type.slideshow
+    - paragraphs.paragraphs_type.slideshow_slide
+  module:
+    - entity_reference_revisions
+id: node.slideshow.field_slides
+field_name: field_slides
+entity_type: node
+bundle: slideshow
+label: Slides
+description: 'Add one or more slides to this slideshow. Slides can be reordered by drag-and-drop.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      slideshow_slide: slideshow_slide
+    target_bundles_drag_drop:
+      slideshow_slide:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

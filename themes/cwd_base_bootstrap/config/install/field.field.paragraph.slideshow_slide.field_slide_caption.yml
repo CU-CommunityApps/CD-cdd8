@@ -1,0 +1,19 @@
+uuid: 5ceb3752-8ffb-4841-80c5-686bb02f804a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slide_caption
+    - paragraphs.paragraphs_type.slideshow_slide
+id: paragraph.slideshow_slide.field_slide_caption
+field_name: field_slide_caption
+entity_type: paragraph
+bundle: slideshow_slide
+label: 'Slide Caption'
+description: 'This text is displayed on the slide as a small caption.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
