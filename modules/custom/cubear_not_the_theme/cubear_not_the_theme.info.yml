@@ -1,8 +1,0 @@
-name: 'Layouts and stuff'
-type: module
-core: 8.x
-dependencies:
-  - page_manager
-  - panels
-version: 8.x-1.0-alpha1
-package: 'CD Drupal 8'
