@@ -23,10 +23,21 @@ $local_settings = __DIR__ . "/settings.local.php";
 if (file_exists($local_settings)) {
   include $local_settings;
 }
-$settings['install_profile'] = 'cubear_ip';
+$settings['install_profile'] = 'minimal';
 
 if (defined('PANTHEON_ENVIRONMENT')){
   # Provide universal absolute path to the installation.
   $ps = json_decode($_SERVER['PRESSFLOW_SETTINGS'], TRUE);
   $settings['simplesamlphp_dir'] = $_ENV['HOME'] .'/code/private/simplesamlphp-1.14.2';
 }
+$databases['default']['default'] = array (
+  'database' => 'doggo',
+  'username' => 'doggo',
+  'password' => 'pass',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$settings['hash_salt'] = '-j_G7VHqFaYzgOPi2aoncBom9UuJ6iWT2wv_qdSF3OW1bjygOOCjtlBelkVzkipmx5_SNKF56w';
