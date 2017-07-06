@@ -1,5 +1,0 @@
-bundle: cubear_ip
-excluded:
-  - system.menu.admin
-  - system.menu.tools
-required: true
