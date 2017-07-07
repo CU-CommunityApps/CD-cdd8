@@ -10,6 +10,7 @@
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Component\Utility\Xss;
+use Drupal\Core\Render\Element;
 
 /**
  * Implements hook_help().
@@ -69,6 +70,29 @@ function better_field_descriptions_form_node_form_alter(&$form, FormStateInterfa
   if (isset($bfd[$bundle])) {
     $form['#attached']['library'][] = 'core/drupal.form';
     $form['#attached']['library'][] = 'core/drupal.collapse';
+    $form['#after_build'][] = 'better_field_descriptions_after_build';
+  }
+}
+
+/**
+ * Adds better field descriptions to node form.
+ *
+ * @param array $form
+ *   The form array.
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ *   Form state.
+ *
+ * @return array
+ *   The form array with better help text.
+ */
+function better_field_descriptions_after_build(array $form, FormStateInterface $form_state) {
+  $bundle = $form_state->getFormObject()->getEntity()->getType();
+
+  // Get better descriptions.
+  $bfd = \Drupal::config('better_field_descriptions.settings')->get('better_field_descriptions');
+
+  // Only add descriptions if the bundle field is configured with one.
+  if (isset($bfd[$bundle])) {
 
     // Default label.
     $default_label = Xss::filter($bfd['default_label']);
@@ -86,6 +110,22 @@ function better_field_descriptions_form_node_form_alter(&$form, FormStateInterfa
         // The description as configured.
         $description = $data['description'];
 
+        // Reference the widget for convenience.
+        $widget =& $form[$field]['widget'];
+
+        // In many cases we want the first child of the widget instead.
+        $use_child = FALSE;
+        if (!isset($widget['#title'])) {
+          $use_child = TRUE;
+        }
+
+        if ($use_child) {
+          $child_keys = Element::children($widget, TRUE);
+          if (!empty($child_keys)) {
+            $widget =& $form[$field]['widget'][current($child_keys)];
+          }
+        }
+
         switch ($position) {
 
           case '#suffix':
@@ -98,12 +138,13 @@ function better_field_descriptions_form_node_form_alter(&$form, FormStateInterfa
 
           case 'between':
 
-            $label = (empty($data['label']) && !empty($form[$field][LANGUAGE_NONE]['#title']))
-              ? $form[$field][LANGUAGE_NONE]['#title']
+            $label = (empty($data['label']) && !empty($widget['#title']))
+              ? $widget['#title']
               : $data['label'];
 
-            $form[$field][LANGUAGE_NONE]['#title_display'] = 'invisible';
-            $form[$field][LANGUAGE_NONE][0]['#title_display'] = 'invisible';
+            $widget['#title_display'] = 'invisible';
+            // In some widgets, the title is duplicated and must also be hidden.
+            better_field_descriptions_hide_duplicate_titles($widget, $widget['#title']);
             $position = '#prefix';
             break;
         }
@@ -113,21 +154,33 @@ function better_field_descriptions_form_node_form_alter(&$form, FormStateInterfa
           '#label' => Xss::filter($label),
           '#description' => Xss::filter($description),
         ];
-        $output = drupal_render($output);
+        $output = \Drupal::service('renderer')->render($output);
 
-        // Adding descriptions to form.
-        // Special case for pseudo fields.
-        if ($field == 'title') {
-          $form[$field]['#prefix'] = '';
-          $form[$field]['#suffix'] = '';
-          $form[$field][$position] = $output;
+        // Add description to element, appending to other markup if present.
+        if (!isset($widget[$position])) {
+          $widget[$position] = '';
         }
-        else {
-          $form[$field][LANGUAGE_NONE]['#prefix'] = '';
-          $form[$field][LANGUAGE_NONE]['#suffix'] = '';
-          $form[$field][LANGUAGE_NONE][$position] = $output;
-        }
+        $widget[$position] .= $output;
       }
+    }
+  }
+  return $form;
+}
+
+/**
+ * Sets display of duplicate titles in children to 'invisible'.
+ *
+ * @param array &$element
+ *   The widget render array.
+ * @param string $title
+ *   The title to be hidden if present.
+ */
+function better_field_descriptions_hide_duplicate_titles(array &$element, $title) {
+  foreach (Element::children($element) as $key) {
+    if (isset($element[$key]['#title']) && $title == $element[$key]['#title']) {
+      $element[$key]['#title_display'] = 'invisible';
+      // Recurse into children of this element (some widgets triplicate).
+      better_field_descriptions_hide_duplicate_titles($element[$key], $title);
     }
   }
 }

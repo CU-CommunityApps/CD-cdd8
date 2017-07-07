@@ -88,8 +88,8 @@ class BetterFieldDescriptionsFieldsForm extends ConfigFormBase {
 
     foreach ($templates as $template) {
       // Removing the '.html.twig' if exists.
-      if (($pos = strpos($template->name, '.')) !== FALSE) {
-        $template = substr($template->name, 0, $pos);
+      if (($pos = strpos($template, '.')) !== FALSE) {
+        $template = substr($template, 0, $pos);
       }
       $better_descriptions_templates[$template] = $template;
     }
@@ -167,6 +167,11 @@ class BetterFieldDescriptionsFieldsForm extends ConfigFormBase {
 
       foreach ($fields as $field_machine_name) {
 
+        // Skip if field no longer exists.
+        if (!isset($fields_instances[$field_machine_name])) {
+          continue;
+        }
+
         // Descriptions.
         $bfd_description = '';
         if (isset($bfd[$bundle_machine_name][$field_machine_name]['description'])) {
@@ -202,7 +207,7 @@ class BetterFieldDescriptionsFieldsForm extends ConfigFormBase {
           '#title' => 'Position of description.',
           '#options' => $positions,
           '#default_value' => $position,
-          '#description' => $this->t('Position the description field above or below the input field. When choosing the between-option the #title of the field will be used as label (if label is left blank) and the original field #title will be set as invisible.'),
+          '#description' => $this->t('Position the description field above or below the input field. Using the between-option can cause unexpected results: any label set above will replace the label of the field, and for some kinds of fields the title may also be duplicated. Please review the relevant content form after saving these settings.'),
         ];
       }
     }

@@ -95,8 +95,6 @@ class BetterFieldDescriptionsSettingsForm extends ConfigFormBase {
       // Get info on regular fields to the bundle.
       $entityTypeManager = $this->entityFieldManager;
       $fields = $entityTypeManager->getFieldDefinitions('node', $bundle_machine_name);
-      $entityManager = $this->entityFieldManager;
-      $fields = $entityManager->getFieldDefinitions('node', $bundle_machine_name);
       foreach ($fields as $field_machine_name => $field) {
         if ($field->getFieldStorageDefinition()->isBaseField() == FALSE) {
           $fields_instances[$field_machine_name] = $field->getLabel() . ' (' . $field_machine_name . ')';
