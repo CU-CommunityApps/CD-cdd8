@@ -13,6 +13,7 @@ dependencies:
   - filter
   - image
   - link
+  - media_entity
   - node
   - paragraphs
   - text
