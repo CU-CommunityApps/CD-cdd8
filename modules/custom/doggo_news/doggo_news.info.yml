@@ -1,0 +1,13 @@
+name: 'Doggo: News'
+description: 'Provides News content type and related configuration. News ctype description goes here.'
+type: module
+core: 8.x
+dependencies:
+  - field
+  - menu_ui
+  - node
+  - path
+  - text
+  - user
+package: Doggo
+version: 8.x-1.0-alpha1

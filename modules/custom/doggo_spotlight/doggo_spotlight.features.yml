@@ -1,0 +1,4 @@
+bundle: doggo
+excluded:
+  - field.storage.node.field_link_single
+required: true

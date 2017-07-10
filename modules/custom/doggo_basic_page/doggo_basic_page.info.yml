@@ -1,0 +1,11 @@
+name: 'Doggo: Basic page'
+description: 'Provides Basic page content type and related configuration. Basic page ctype description goes here.'
+type: module
+core: 8.x
+dependencies:
+  - field
+  - menu_ui
+  - node
+  - text
+version: 8.x-1.0-alpha1
+package: Doggo

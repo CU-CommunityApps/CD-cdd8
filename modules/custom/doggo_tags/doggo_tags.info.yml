@@ -1,0 +1,8 @@
+name: 'Doggo: Tags'
+description: 'Provides Tags taxonomy vocabulary and related configuration. Tags vocab description goes here.'
+type: module
+core: 8.x
+dependencies:
+  - taxonomy
+version: 8.x-1.0-alpha1
+package: Doggo
