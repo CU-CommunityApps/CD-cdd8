@@ -1,0 +1,14 @@
+name: 'Doggo: Slideshow'
+description: 'Provides Slideshow content type and related configuration. An accessible, responsive slideshow of images with titles and captions.'
+type: module
+core: 8.x
+dependencies:
+  - doggo_core
+  - entity_reference_revisions
+  - field
+  - link
+  - menu_ui
+  - node
+  - paragraphs
+version: 8.x-1.0-alpha1
+package: Doggo

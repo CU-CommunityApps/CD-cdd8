@@ -1,11 +1,10 @@
-uuid: 4897f9e8-8314-4c23-9a48-b3b5265488b4
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
-id: paragraph.field_image_alt_text
-field_name: field_image_alt_text
+id: paragraph.field_slide_title
+field_name: field_slide_title
 entity_type: paragraph
 type: string
 settings:

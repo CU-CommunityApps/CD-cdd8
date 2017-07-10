@@ -1,4 +1,3 @@
-uuid: 1f8b0825-5306-4405-9fca-364a647e632f
 langcode: en
 status: true
 dependencies:
@@ -8,7 +7,6 @@ dependencies:
     - field.field.paragraph.slideshow_slide.field_slide_caption
     - field.field.paragraph.slideshow_slide.field_slide_link
     - field.field.paragraph.slideshow_slide.field_slide_title
-    - image.style.thumbnail
     - paragraphs.paragraphs_type.slideshow_slide
   module:
     - image
@@ -19,46 +17,47 @@ bundle: slideshow_slide
 mode: default
 content:
   field_image:
-    weight: 0
+    weight: 3
+    label: hidden
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      image_style: ''
     third_party_settings: {  }
-    type: image_image
+    type: image_url
     region: content
   field_image_alt_text:
     weight: 4
+    label: above
     settings:
-      size: 60
-      placeholder: ''
+      link_to_entity: false
     third_party_settings: {  }
-    type: string_textfield
+    type: string
     region: content
   field_slide_caption:
-    weight: 2
+    weight: 1
+    label: hidden
     settings:
-      size: 60
-      placeholder: ''
+      link_to_entity: false
     third_party_settings: {  }
-    type: string_textfield
+    type: string
     region: content
   field_slide_link:
-    weight: 3
+    weight: 2
+    label: inline
     settings:
-      placeholder_url: ''
-      placeholder_title: ''
+      trim_length: 80
+      url_only: true
+      url_plain: true
+      rel: '0'
+      target: '0'
     third_party_settings: {  }
-    type: link_default
+    type: link
     region: content
   field_slide_title:
-    weight: 1
+    weight: 0
+    label: hidden
     settings:
-      size: 60
-      placeholder: ''
+      link_to_entity: false
     third_party_settings: {  }
-    type: string_textfield
+    type: string
     region: content
-hidden:
-  created: true
-  status: true
-  uid: true
+hidden: {  }
