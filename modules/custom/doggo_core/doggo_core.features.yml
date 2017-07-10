@@ -1,6 +1,4 @@
 bundle: doggo
 excluded:
-  - core.entity_view_mode.block.token
-  - core.entity_view_mode.node.token
   - cwd_base_bootstrap.settings
 required: true
