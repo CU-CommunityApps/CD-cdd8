@@ -3,6 +3,12 @@ description: 'Provides Tags taxonomy vocabulary and related configuration. Tags 
 type: module
 core: 8.x
 dependencies:
+  - doggo_news
+  - doggo_spotlight
+  - field
+  - node
+  - path
   - taxonomy
+  - text
 version: 8.x-1.0-alpha1
 package: Doggo

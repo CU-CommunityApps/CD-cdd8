@@ -3,6 +3,9 @@ description: 'Provides News content type and related configuration. News ctype d
 type: module
 core: 8.x
 dependencies:
+  - doggo_categories
+  - doggo_core
+  - doggo_tags
   - field
   - menu_ui
   - node
@@ -10,4 +13,4 @@ dependencies:
   - text
   - user
 package: Doggo
-version: 8.x-1.0-alpha1
+version: 8.x-1.0-alpha2

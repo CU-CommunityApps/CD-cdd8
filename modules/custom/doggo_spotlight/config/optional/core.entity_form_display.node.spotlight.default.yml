@@ -3,8 +3,10 @@ status: true
 dependencies:
   config:
     - field.field.node.spotlight.body
+    - field.field.node.spotlight.field_categories
     - field.field.node.spotlight.field_image_single
     - field.field.node.spotlight.field_link_single
+    - field.field.node.spotlight.field_tags
     - field.field.node.spotlight.field_teaser
     - image.style.thumbnail
     - node.type.spotlight
@@ -20,7 +22,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 3
+    weight: 2
     settings:
       rows: 9
       summary_rows: 3
@@ -29,12 +31,18 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 5
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_categories:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_image_single:
-    weight: 26
+    weight: 4
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -42,12 +50,18 @@ content:
     type: image_image
     region: content
   field_link_single:
-    weight: 2
+    weight: 3
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
+  field_tags:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   field_teaser:
     weight: 1
@@ -59,16 +73,9 @@ content:
     region: content
   path:
     type: path
-    weight: 6
+    weight: 9
     region: content
     settings: {  }
-    third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    weight: 7
-    region: content
-    settings:
-      display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -80,7 +87,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 7
     settings:
       match_operator: CONTAINS
       size: 60
@@ -88,4 +95,5 @@ content:
     region: content
     third_party_settings: {  }
 hidden:
+  promote: true
   sticky: true

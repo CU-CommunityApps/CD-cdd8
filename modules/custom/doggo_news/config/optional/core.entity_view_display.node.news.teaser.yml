@@ -4,6 +4,8 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.news.body
+    - field.field.node.news.field_categories
+    - field.field.node.news.field_tags
     - field.field.node.news.field_teaser
     - node.type.news
   module:
@@ -28,3 +30,5 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
+  field_categories: true
+  field_tags: true
