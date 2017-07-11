@@ -4,11 +4,8 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.entity_browser.body
-    - field.field.node.entity_browser.field_files
-    - field.field.node.entity_browser.field_files1
     - field.field.node.entity_browser.field_files_over_ajax
     - field.field.node.entity_browser.field_image_browser
-    - field.field.node.entity_browser.field_nodes
     - node.type.entity_browser
   module:
     - text
@@ -30,8 +27,5 @@ content:
     weight: 100
     region: content
 hidden:
-  field_files: true
-  field_files1: true
   field_files_over_ajax: true
   field_image_browser: true
-  field_nodes: true
