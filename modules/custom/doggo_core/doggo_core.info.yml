@@ -20,5 +20,5 @@ dependencies:
   - taxonomy
   - text
   - user
-version: 8.x-1.0-alpha4
+version: 8.x-1.0-alpha5
 package: Doggo
