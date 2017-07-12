@@ -2,7 +2,6 @@ bundle: doggo
 excluded:
   - block.block.seven_admin
   - block.block.seven_branding
-  - block.block.seven_breadcrumbs
   - block.block.seven_local_actions
   - block.block.seven_local_tasks
   - block.block.seven_login
