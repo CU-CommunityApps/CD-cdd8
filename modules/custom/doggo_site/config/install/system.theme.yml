@@ -1,2 +1,2 @@
 admin: cwd_admin
-default: cwd_admin
+default: cwd_base_bootstrap
