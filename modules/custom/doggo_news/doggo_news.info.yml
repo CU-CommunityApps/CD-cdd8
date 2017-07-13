@@ -7,6 +7,7 @@ dependencies:
   - doggo_core
   - doggo_tags
   - field
+  - image
   - link
   - menu_ui
   - node
@@ -14,4 +15,4 @@ dependencies:
   - text
   - user
 package: Doggo
-version: 8.x-1.0-alpha2
+version: 8.x-1.0-alpha3
