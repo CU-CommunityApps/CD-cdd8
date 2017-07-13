@@ -11,7 +11,7 @@ field_name: field_link_single
 entity_type: node
 bundle: spotlight
 label: 'Spotlight link'
-description: ''
+description: 'Use this field if the Spotlight item is just a link, <strong>instead of using the Body field</strong>.<br /><big>[IGNORE FOR NOW] <strong>For links to internal pages</strong> on this same website, do not enter manually, use the <strong>Search</strong> button.[/IGNORE FOR NOW]</big>'
 required: false
 translatable: false
 default_value: {  }

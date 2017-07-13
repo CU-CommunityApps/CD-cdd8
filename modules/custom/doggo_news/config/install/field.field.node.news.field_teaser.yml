@@ -10,9 +10,9 @@ id: node.news.field_teaser
 field_name: field_teaser
 entity_type: node
 bundle: news
-label: 'Teaser (summary)'
-description: ''
-required: false
+label: 'Teaser text (summary)'
+description: 'Provide teaser text for use in lists/summaries.'
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

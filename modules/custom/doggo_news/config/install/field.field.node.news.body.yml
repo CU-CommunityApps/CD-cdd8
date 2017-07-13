@@ -10,8 +10,8 @@ id: node.news.body
 field_name: body
 entity_type: node
 bundle: news
-label: Body
-description: ''
+label: 'News story (body)'
+description: 'Use this field if the News item has its own content (<strong>instead of</strong> simply linking to a URL with the "External news link" field below).'
 required: false
 translatable: true
 default_value: {  }

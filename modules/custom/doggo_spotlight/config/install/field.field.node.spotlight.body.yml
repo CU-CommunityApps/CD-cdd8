@@ -10,8 +10,8 @@ id: node.spotlight.body
 field_name: body
 entity_type: node
 bundle: spotlight
-label: Body
-description: ''
+label: 'Spotlight body'
+description: 'Use this field if the Spotlight item has its own content (<strong>instead of</strong> simply linking to a URL with the "Spotlight link" field below).'
 required: false
 translatable: true
 default_value: {  }

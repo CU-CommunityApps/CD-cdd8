@@ -10,8 +10,8 @@ id: node.basic_page.field_teaser
 field_name: field_teaser
 entity_type: node
 bundle: basic_page
-label: 'Teaser (summary)'
-description: ''
+label: 'Teaser text (summary)'
+description: 'OPTIONAL (provide teaser text for use in lists/summaries).'
 required: false
 translatable: true
 default_value: {  }
