@@ -14,5 +14,6 @@ dependencies:
   - path
   - text
   - user
+  - views
 package: Doggo
-version: 8.x-1.0-alpha3
+version: 8.x-1.0-alpha4
