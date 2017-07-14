@@ -6,6 +6,12 @@
 $settings['container_yamls'][] = __DIR__ . '/services.yml';
 
 /**
+ * Enable PHP filter b/c twig_tweak.
+ * https://www.drupal.org/project/twig_tweak
+ */
+$settings['twig_tweak_enable_php_filter'] = TRUE;
+
+/**
  * Include the Pantheon-specific settings file.
  *
  * n.b. The settings.pantheon.php file makes some changes
