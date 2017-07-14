@@ -5,13 +5,18 @@ global-styling:
       css/base.css: {}
       css/cornell.css: {}
       css/cwd_slider.css: {}
+      css/cwd_gallery.css: {}
+      css/cwd_utilities.css: {}
       fonts/font-awesome.min.css: {}
       fonts/material-design-iconic-font.min.css: {}
       fonts/cornell-custom.css: {}
       fonts/totally-cornered.css: {}
       css/drupal.css: {}
   js:
+    js/contrib/jquery-ui-1.10.2.custom.min.js: {}
+    js/contrib/jquery-ui-easing.min.js: {}
     js/cwd.js: {}
+    js/cwd_gallery.js: {}
 
 header-scripts:
   header: true
