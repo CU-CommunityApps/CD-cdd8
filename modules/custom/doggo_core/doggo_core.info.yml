@@ -14,11 +14,13 @@ dependencies:
   - filter
   - image
   - link
+  - linkit
   - media_entity
+  - menu_link_content
   - node
   - paragraphs
   - taxonomy
   - text
   - user
-version: 8.x-1.0-alpha5
+version: 8.x-1.0-alpha6
 package: Doggo
