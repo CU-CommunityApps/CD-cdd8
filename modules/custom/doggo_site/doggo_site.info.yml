@@ -5,6 +5,8 @@ core: 8.x
 dependencies:
   - block
   - help
+  - node
+  - pathauto
   - search
   - system
   - user
