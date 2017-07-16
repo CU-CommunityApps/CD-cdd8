@@ -5,9 +5,8 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main
-    parent: 'main:'
+    available_menus: {  }
+    parent: ''
 name: Spotlight
 type: spotlight
 description: 'Spotlight ctype description goes here... Spotlights have a featured image, and usually they''re used to promote (spotlight!) external content or another piece of content on this website.'

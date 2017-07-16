@@ -4,11 +4,14 @@ type: module
 core: 8.x
 dependencies:
   - doggo_core
+  - doggo_slideshow_slide
   - entity_reference_revisions
   - field
   - link
   - menu_ui
   - node
   - paragraphs
+  - path
+  - user
 version: 8.x-1.0-alpha1
 package: Doggo

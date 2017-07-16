@@ -11,6 +11,6 @@ name: Slideshow
 type: slideshow
 description: 'An accessible, responsive slideshow of images with titles and captions.'
 help: ''
-new_revision: true
+new_revision: false
 preview_mode: 1
 display_submitted: false
