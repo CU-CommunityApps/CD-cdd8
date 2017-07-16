@@ -1,4 +1,4 @@
-name: 'Doggo: Basic block'
+name: 'Doggo: Basic custom block type'
 description: 'Provides Basic block custom block type and related configuration. A basic block contains a title and a body.'
 type: module
 core: 8.x
