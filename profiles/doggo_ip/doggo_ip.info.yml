@@ -14,80 +14,99 @@ distribution:
 # Required modules
 # Note that any dependencies of the modules listed here will be installed automatically.
 dependencies:
-  # Minimal
-  - node
+  - admin_toolbar
+  - admin_toolbar_tools
+  - automated_cron
+  - better_field_descriptions
+  - big_pipe
   - block
-  - dblog
-  - page_cache
-  - dynamic_page_cache
-
-  # Other core
-  #   Question: standard (and drupalcommerce/commerce_base) have these in
-  #   non-alpha order -- does the order actually affect install order in D8...?
   - block_content
+  - breakpoint
+  - chosen
+  - chosen_lib
   - ckeditor
+  - coffee
   - config
+  - config_direct_save
+  - config_update
+  - config_update_ui
   - contextual
+  - ctools
+  - ctools_block
+  - ctools_views
+  - datetime
   - dblog
+  - devel
+  - devel_generate
+  - diff
+  - doggo_basic_block
+  - doggo_basic_page
+  - doggo_categories
+  - doggo_core
+  - doggo_entity_browser
+  - doggo_gallery
+  - doggo_image
+  - doggo_news
+  - doggo_site
+  - doggo_slideshow
+  - doggo_slideshow_slide
+  - doggo_spotlight
+  - doggo_tags
+  - doggo_user
+  - dynamic_page_cache
+  - editor
+  - editor_advanced_link
+  - entity
+  - entity_browser
+  - entity_browser_example
+  - entity_reference_revisions
+  - features
+  - features_ui
+  - field
+  - field_group
   - field_ui
   - file
+  - filter
   - help
   - image
+  - inline_form_errors
+  - kint
+  - layout_discovery
+  - libraries
   - link
+  - linkit
+  - media_entity
   - menu_link_content
   - menu_ui
+  - module_filter
+  - node
   - options
+  - outside_in
+  - override_node_options
+  - page_cache
+  - page_manager
+  - page_manager_ui
+  - panels
   - path
   - quickedit
   - responsive_image
   - search
+  - snippet_manager
+  - syslog
+  - system
   - taxonomy
+  - text
+  - token
   - toolbar
-  - views_ui
-
-  # Contrib
-  - admin_toolbar
-  - admin_toolbar_tools
-  - better_field_descriptions
-  - chosen_field
-  - coffee
-  - config_direct_save
-  - config_update_ui
-  - devel
-  - diff
-  - entity
-  - entity_browser
-  #- entity_reference_revisions
-  - features_ui
-  - field_group
-  - linkit
-  - media_entity
-  - module_filter
-  - override_node_options
-  - paragraphs
-  - pathauto
-  - redis
+  - toolbar_anti_flicker
   - twig_tweak
+  - update
+  - user
   - vertical_tabs_config
-
-  # Custom
-  # Part 1 (if I can control the order...)
-  - doggo_core
-  - doggo_site
-  # Part 2
-  - doggo_user
-  # Part 3
-  - doggo_categories
-  - doggo_tags
-  - doggo_entity_browser
-  # Part 4
-  - doggo_image
-  - doggo_basic_page
-  - doggo_spotlight
-  - doggo_slideshow_slide
-  # Part 5
-  - doggo_slideshow
-  - doggo_news
+  - views
+  - views_ui
+  - pathauto
+  - paragraphs
 
 # List any themes that should be installed as part of the installation
 # profile installation.

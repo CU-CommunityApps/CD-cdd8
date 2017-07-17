@@ -1,0 +1,10 @@
+toolbar_items:
+  - devel.elements_page
+  - devel.entity_info_page
+  - devel.event_info
+  - devel.execute_php
+  - devel.field_info_page
+  - devel.phpinfo
+  - devel.menu_rebuild
+  - devel.route_info
+  - devel.theme_registry
