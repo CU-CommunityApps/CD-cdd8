@@ -1,0 +1,18 @@
+name: 'Doggo: Spotlight'
+description: 'Provides Spotlight content type and related configuration. Spotlight ctype description goes here... Spotlights have a featured image, and usually they''re used to promote (spotlight!) external content or another piece of content on this website.'
+type: module
+core: 8.x
+dependencies:
+  - doggo_categories
+  - doggo_core
+  - doggo_tags
+  - field
+  - image
+  - link
+  - menu_ui
+  - node
+  - path
+  - text
+  - user
+version: 8.x-1.0-alpha2
+package: Doggo

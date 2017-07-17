@@ -1,0 +1,10 @@
+name: 'Doggo: Categories'
+description: 'Provides Categories taxonomy vocabulary and related configuration. Categories vocab description goes here.'
+type: module
+core: 8.x
+dependencies:
+  - path
+  - taxonomy
+  - text
+version: 8.x-1.0-alpha1
+package: Doggo

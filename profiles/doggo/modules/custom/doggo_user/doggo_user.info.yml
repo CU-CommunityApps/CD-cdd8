@@ -1,0 +1,10 @@
+name: 'Doggo: User (nothing to see here)'
+description: '(Going thru the motions...) Provide User related configuration.'
+type: module
+core: 8.x
+dependencies:
+  - doggo_core
+  - system
+  - user
+version: 8.x-1.0-alpha1
+package: Doggo

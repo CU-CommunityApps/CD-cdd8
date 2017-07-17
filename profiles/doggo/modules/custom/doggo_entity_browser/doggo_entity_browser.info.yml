@@ -1,0 +1,16 @@
+name: 'Doggo: Entity browser'
+description: 'Provides Entity browser content type and related configuration. Entity browser ctype description goes here.'
+type: module
+core: 8.x
+dependencies:
+  - doggo_core
+  - entity_browser
+  - field
+  - image
+  - menu_ui
+  - node
+  - text
+  - user
+  - views
+version: 8.x-1.0-alpha2
+package: Doggo

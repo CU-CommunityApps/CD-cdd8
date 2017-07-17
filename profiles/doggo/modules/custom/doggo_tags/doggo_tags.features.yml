@@ -1,0 +1,6 @@
+bundle: doggo
+excluded:
+  - field.field.node.news.field_tags
+  - field.field.node.spotlight.field_tags
+  - field.storage.node.field_tags
+required: true

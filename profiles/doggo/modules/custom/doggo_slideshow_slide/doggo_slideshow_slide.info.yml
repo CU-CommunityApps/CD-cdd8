@@ -1,0 +1,11 @@
+name: 'Doggo: Slideshow Slide (paragraph)'
+description: 'Provides Slideshow Slide paragraphs type and related configuration.'
+type: module
+core: 8.x
+dependencies:
+  - field
+  - image
+  - link
+  - paragraphs
+version: 8.x-1.0-alpha1
+package: Doggo

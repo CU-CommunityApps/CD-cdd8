@@ -1,0 +1,13 @@
+name: Gallery
+description: 'Provides Gallery content type and related configuration. A collection of images and/or videos (NYI) displayed for browsing in a single interface.'
+type: module
+core: 8.x
+dependencies:
+  - doggo_core
+  - field
+  - image
+  - menu_ui
+  - node
+  - text
+version: 8.x-1.0-alpha1
+package: Doggo

@@ -1,0 +1,4 @@
+bundle: doggo
+excluded:
+  - entity_browser.browser.eb_files1
+required: true

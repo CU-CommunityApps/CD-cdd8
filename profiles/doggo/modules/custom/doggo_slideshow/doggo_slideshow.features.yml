@@ -1,0 +1,12 @@
+bundle: doggo
+excluded:
+  - core.entity_form_display.paragraph.slideshow_slide.default
+  - core.entity_view_display.paragraph.slideshow_slide.default
+  - field.field.paragraph.slideshow_slide.field_slide_caption
+  - field.field.paragraph.slideshow_slide.field_slide_link
+  - field.field.paragraph.slideshow_slide.field_slide_title
+  - field.storage.node.field_slides
+  - field.storage.paragraph.field_slide_caption
+  - field.storage.paragraph.field_slide_link
+  - field.storage.paragraph.field_slide_title
+required: true
