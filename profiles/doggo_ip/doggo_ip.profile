@@ -15,7 +15,7 @@ use Drupal\Core\Form\FormStateInterface;
  */
 function doggo_ip_form_install_configure_form_alter(&$form, FormStateInterface $form_state) {
   // Pre-populate the site name and email address.
-  $form['site_information']['site_name']['#default_value'] = 'CU Bear Cub'
+  $form['site_information']['site_name']['#default_value'] = 'CU Bear Cub';
   $form['site_information']['site_mail']['#default_value'] = 'cd-drupal-l@list.cornell.edu';
 
   // Account information defaults
