@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Install, update and uninstall functions for the doggo installation profile.
+ * Install, update and uninstall functions for the doggo_ip installation profile.
  */
 
 use Drupal\user\Entity\User;
@@ -16,7 +16,7 @@ use Drupal\shortcut\Entity\Shortcut;
  *
  * @see system_install()
  */
-function doggo_install() {
+function doggo_ip_install() {
   // Disable the user pictures on nodes.
   \Drupal::configFactory()->getEditable('system.theme.global')->set('features.node_user_picture', FALSE)->save(TRUE);
 
