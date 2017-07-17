@@ -110,5 +110,5 @@ assignments:
         view: view
     enabled: true
     weight: 7
-profile_name: minimal
-is_profile: false
+#profile_name: minimal
+#is_profile: false
