@@ -86,8 +86,9 @@ dependencies:
   - doggo_spotlight
   - doggo_slideshow_slide
   # Part 5
-  - doggo_slideshow
+  - doggo_gallery
   - doggo_news
+  - doggo_slideshow
 
 # List any themes that should be installed as part of the installation
 # profile installation.
