@@ -1,0 +1,100 @@
+name: Doggo Profile
+type: profile
+description: 'An install profile for doggos and puppers everywhere.  Cool as h*ck.'
+  # move Cool as h*ck to "slogan!"
+core: 8.x
+
+# Optional: Declare your installation profile as a distribution
+# This will make the installer auto-select this installation profile.
+# The distribution_name property is used in the installer and other places as
+# a label for the software being installed.
+distribution:
+  name: Drupal
+
+# Required modules
+# Note that any dependencies of the modules listed here will be installed automatically.
+dependencies:
+  # Minimal
+  - node
+  - block
+  - dblog
+  - page_cache
+  - dynamic_page_cache
+
+  # Other core
+  #   Question: standard (and drupalcommerce/commerce_base) have these in
+  #   non-alpha order -- does the order actually affect install order in D8...?
+  - block_content
+  - ckeditor
+  - config
+  - contextual
+  - dblog
+  - field_ui
+  - file
+  - help
+  - image
+  - link
+  - menu_link_content
+  - menu_ui
+  - options
+  - path
+  - quickedit
+  - responsive_image
+  - search
+  - taxonomy
+  - toolbar
+  - views_ui
+
+  # Contrib
+  - admin_toolbar
+  - admin_toolbar_tools
+  - better_field_descriptions
+  - chosen_field
+  - coffee
+  - config_direct_save
+  - config_update_ui
+  - devel
+  - diff
+  - entity
+  - entity_browser
+  #- entity_reference_revisions
+  - features_ui
+  - field_group
+  - linkit
+  - media_entity
+  - module_filter
+  - override_node_options
+  - paragraphs
+  - pathauto
+  - redis
+  - twig_tweak
+  - vertical_tabs_config
+
+  # Custom
+  # Part 1 (if I can control the order...)
+  - doggo_core
+  - doggo_site
+  # Part 2
+  - doggo_user
+  # Part 3
+  - doggo_categories
+  - doggo_tags
+  - doggo_entity_browser
+  # Part 4
+  - doggo_image
+  - doggo_basic_page
+  - doggo_spotlight
+  - doggo_slideshow_slide
+  # Part 5
+  - doggo_gallery
+  - doggo_news
+  - doggo_slideshow
+
+# List any themes that should be installed as part of the installation
+# profile installation.
+# Note that this will not set any theme as the default theme.
+themes:
+  - seven
+  - bootstrap
+  - cwd_base_bootstrap
+  - cwd_admin
