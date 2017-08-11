@@ -1,5 +1,6 @@
-/* CWD Image Slider (ama39, last update: 7/1/17)
+/* CWD Image Slider (ama39, last update: 8/10/17)
    - ...
+   - >> TODO: more introduction and documentation will be added here soon (in the meantime, please see the "Scripted Components" documentation for more information) <<
    - preloads images and creates "buffer" layers to allow cover placement and ensure smooth transitions
    - supports unlimited simultaneous sliders
    - ...

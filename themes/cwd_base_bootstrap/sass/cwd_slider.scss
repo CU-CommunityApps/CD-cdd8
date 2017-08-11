@@ -98,8 +98,10 @@
 	- Apply .slider-container to the background container and .slider-caption to the caption container to activate the styles below.
    ************************************ */
 .slider-container {
-	min-height: 640px !important;
-	padding: 0;
+	padding: 0 0 76%;
+}
+body > header .slider-container {
+	max-height: 640px;
 }
 .slider-container .slide-buffer {
 	background-position: 50% 30%;
@@ -177,13 +179,6 @@ main .slider-caption h2, #main .slider-caption h2 {
 	color: #fff;
 }
 @media only screen and (max-width: 1383px) {
-	.slider-container {
-		min-height: 100px !important;
-		padding-bottom: 46.3%;
-	}
-	main .slider-container, #main .slider-container {
-		padding-bottom: 76%;
-	}
 	.slider-container .container {
 		min-height: 0;
 		position: static;

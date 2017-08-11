@@ -17,6 +17,7 @@ global-styling:
     js/contrib/jquery-ui-easing.min.js: {}
     js/cwd.js: {}
     js/cwd_gallery.js: {}
+    js/cwd_popups.js: {}
 
 header-scripts:
   header: true

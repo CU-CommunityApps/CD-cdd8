@@ -39,14 +39,18 @@
 
  TODO:
  - sanitize title and alt to bar doublequotes (need to check if Drupal already does this for image fields - probably does)
- - check if caption exists and only render the H3 tag and caption segment of the ARIA label if so
- - add options for two different interface options (grid+modal and viewer)
  */
 #}
 {% for item in items %}
+  {% set title_aria_bridge = '' %}
+  {% if item.content['#item'].title %}
+    {% set title_aria_bridge = ', Caption: ' %}
+  {% endif %}
   <div class="col">
-    <a role="img" href="{{ file_url(item.content['#item'].entity.uri.value) }}" data-title="{{ item.content['#item'].title }}" data-alt="{{ item.content['#item'].alt }}" aria-label="{{ item.content['#item'].alt }}, Caption: {{ item.content['#item'].title }}">
+    <a role="img" href="{{ file_url(item.content['#item'].entity.uri.value) }}" data-title="{{ item.content['#item'].title }}" data-alt="{{ item.content['#item'].alt }}" aria-label="{{ item.content['#item'].alt }}{{ title_aria_bridge }}{{ item.content['#item'].title }}">
+    {% if item.content['#item'].title %}
       <h3 class="sr-only">{{ item.content['#item'].title }}</h3>
+    {% endif %}
       <img src="{{ item.content['#item'].entity.uri.value | image_style('gallery_thumbnail') }}" alt="{{ item.content['#item'].alt }}">
     </a>
   </div>

@@ -109,10 +109,12 @@
   left: 0;
   right: 0;
   bottom: 0;
+  margin-bottom: 0;
   color: #fff;
   text-align: left;
   font-family: Avenir Next, Proxima Nova, "proxima-nova", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica Neue, sans-serif;
-  font-size: 15px;
+  font-size: 14px;
+  line-height: 1.4;
   padding: 4em 0.8em 0.8em;
   background: #2d2d2d;
   background: rgba(45, 45, 45, 0.7);
@@ -126,6 +128,12 @@
 
 .cwd-gallery.viewer .thumbnails {
   position: relative;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   overflow-x: auto;
@@ -241,6 +249,12 @@
 
   .cwd-gallery.strips .col:nth-child(3n+1):before {
     content: '';
+  }
+}
+@media (min-width: 768px) {
+  .cwd-gallery.viewer .slide .caption {
+    font-size: 15px;
+    line-height: inherit;
   }
 }
 @media (min-width: 992px) {

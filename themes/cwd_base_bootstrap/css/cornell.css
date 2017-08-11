@@ -102,20 +102,14 @@
   width: 2.4em;
   height: 2.4em;
   margin: 0;
-  background: #b31b1b;
+  background: #b31b1b url("../images/cornell/icon_chevron_right_white.svg") 52% 50% no-repeat;
   color: #fff;
   border: 0;
   border: 1px solid #fff;
 }
 
 .cu-search button[type='submit']:active {
-  background: #780001;
-}
-
-.cu-search button[type='submit'] .fa {
-  position: relative;
-  top: 1px;
-  left: 1px;
+  background-color: #780001;
 }
 
 /* Brand Header */

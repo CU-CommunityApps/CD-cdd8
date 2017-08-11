@@ -106,10 +106,12 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
+	margin-bottom: 0;
 	color: #fff;
 	text-align: left;
 	font-family: $cwd-font-family-sans-alt;
-	font-size: 15px;
+	font-size: 14px;
+	line-height: 1.4;
 	padding: 4em 0.8em 0.8em;
 	background: #2d2d2d;
 	background: rgba(45, 45, 45, 0.7);
@@ -122,6 +124,12 @@
 }
 .cwd-gallery.viewer .thumbnails {
 	position: relative;
+	display: -webkit-flex;
+	display: -webkit-box; // "webkit-box" appears after "webkit-flex" because older versions of Safari have a buggy implementation of webkit-flex and actually do better for some flex styles with the older flexbox model
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: nowrap;
 	-ms-flex-wrap: nowrap;
 	flex-wrap: nowrap;
 	overflow-x: auto; // use "overflow-x: auto" for a visible scrollbar
@@ -247,7 +255,10 @@
 // ************************************************************************ //
 @media (min-width: $screen-sm-min) { // SMALL GRID ************************ //
 
-
+.cwd-gallery.viewer .slide .caption {
+	font-size: 15px;
+	line-height: inherit;
+}
 
 
 
