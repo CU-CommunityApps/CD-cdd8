@@ -24,20 +24,6 @@ module:
   devel: 0
   devel_generate: 0
   diff: 0
-  doggo_basic_block: 0
-  doggo_basic_page: 0
-  doggo_categories: 0
-  doggo_core: 0
-  doggo_entity_browser: 0
-  doggo_gallery: 0
-  doggo_image: 0
-  doggo_news: 0
-  doggo_site: 0
-  doggo_slideshow: 0
-  doggo_slideshow_slide: 0
-  doggo_spotlight: 0
-  doggo_tags: 0
-  doggo_user: 0
   dynamic_page_cache: 0
   editor: 0
   editor_advanced_link: 0
