@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.gallery.body
     - field.field.node.gallery.field_gallery_image
+    - field.field.node.gallery.field_gallery_type
     - node.type.gallery
   module:
     - image
@@ -38,4 +39,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_gallery_type: true
