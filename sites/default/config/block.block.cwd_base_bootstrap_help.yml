@@ -1,4 +1,4 @@
-uuid: 3ed9f45c-2d93-40a8-afdf-f98f0ef9f407
+uuid: 8927d1bd-e3c3-4315-b811-c6d6460acfdf
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: cwd_base_bootstrap_help
 theme: cwd_base_bootstrap
 region: help
-weight: -30
+weight: -9
 provider: null
 plugin: help_block
 settings:

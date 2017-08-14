@@ -1,4 +1,4 @@
-uuid: 8e7f2ca3-8073-41d2-9242-c9a8607c45c1
+uuid: 2dfbcc92-4a26-4519-9c9b-61fc679e8d6d
 langcode: en
 status: false
 dependencies:
@@ -8,6 +8,8 @@ dependencies:
     - system
   theme:
     - cwd_admin
+_core:
+  default_config_hash: HJiYlI-m9ekPpRBcsx19nUfYFA2IMedTthgZ8-JT53Q
 id: cwd_admin_admin
 theme: cwd_admin
 region: header

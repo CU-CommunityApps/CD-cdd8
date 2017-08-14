@@ -1,4 +1,4 @@
-uuid: 0306fb42-a17e-4b28-82f3-7f80034337e1
+uuid: f32fb7ed-d564-4c33-82fd-510cfadd1473
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: cwd_base_bootstrap_powered
 theme: cwd_base_bootstrap
 region: footer
-weight: -10
+weight: -9
 provider: null
 plugin: system_powered_by_block
 settings:

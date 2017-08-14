@@ -1,4 +1,4 @@
-uuid: 3f4ee133-40c4-4101-8ee5-22e46d8d603e
+uuid: 81b576b3-043f-49e8-bdc1-688e36452b75
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - link
 _core:
-  default_config_hash: M6w0U96FeGSNBbesYr0QduDEHx5W7WLLYi6NFbt6iXs
+  default_config_hash: XcvlVDMgFWChCSKuPw3ldh6YWafVDT5xpKhwPJMbeg8
 id: node.spotlight.field_link_single
 field_name: field_link_single
 entity_type: node

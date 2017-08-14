@@ -1,16 +1,18 @@
-uuid: c5dfc638-c745-4a5b-a5a7-c185963f5f27
+uuid: efb09b0a-c64e-4938-9882-84a4a6028f42
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.basic_page.body
+    - field.field.node.basic_page.field_paragraphs
     - field.field.node.basic_page.field_teaser
     - node.type.basic_page
   module:
+    - paragraphs
     - path
     - text
 _core:
-  default_config_hash: 5cw5wNilb-L12D-jSjfGw_d0RMNdzeLwXXP0r8LS4Iw
+  default_config_hash: B-5oYyGXP6tzDCymOf3AE8GIzqwc38xMmaC_AuVNjwg
 id: node.basic_page.default
 targetEntityType: node
 bundle: basic_page
@@ -27,10 +29,22 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 4
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_paragraphs:
+    type: entity_reference_paragraphs
+    weight: 3
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: select
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: content
   field_teaser:
     weight: 1
     settings:
@@ -41,7 +55,7 @@ content:
     region: content
   path:
     type: path
-    weight: 5
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -55,7 +69,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 3
+    weight: 4
     settings:
       match_operator: CONTAINS
       size: 60

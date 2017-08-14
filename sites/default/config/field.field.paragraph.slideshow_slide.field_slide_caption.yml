@@ -1,4 +1,4 @@
-uuid: 5ceb3752-8ffb-4841-80c5-686bb02f804a
+uuid: eeb95978-677a-42bf-8569-a9b3a0f0fb46
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ id: paragraph.slideshow_slide.field_slide_caption
 field_name: field_slide_caption
 entity_type: paragraph
 bundle: slideshow_slide
-label: 'Slide Caption'
+label: 'Slide caption'
 description: 'This text is displayed on the slide as a small caption.'
 required: false
 translatable: false

@@ -1,4 +1,4 @@
-uuid: 2eb2ba36-38b3-40eb-9a94-57ab99475f70
+uuid: e11c533c-32c5-4be1-9ee3-18b890dc0344
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ id: paragraph.slideshow_slide.field_slide_title
 field_name: field_slide_title
 entity_type: paragraph
 bundle: slideshow_slide
-label: 'Slide Title'
+label: 'Slide title'
 description: 'This text is displayed on the slide as a large headline.'
 required: false
 translatable: false

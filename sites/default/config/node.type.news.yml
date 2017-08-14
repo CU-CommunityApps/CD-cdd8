@@ -1,4 +1,4 @@
-uuid: 5e7f7bb3-997b-43a1-af2b-cd2e77b7e78c
+uuid: 7a75cb55-7e06-47eb-aadc-65941628afdb
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ third_party_settings:
     available_menus: {  }
     parent: ''
 _core:
-  default_config_hash: SJEuidwK-J5v7yXEu3HNGK0lbivnN3JkbSL-VCztfdU
+  default_config_hash: w1zwkfUxFBXJAoRlvcGhc4m3O1uM43VZfae2MA0AR3A
 name: News
 type: news
 description: 'News ctype description goes here.'

@@ -1,4 +1,4 @@
-uuid: 988732e8-4f39-4f8c-8617-0d12cc5fbaf5
+uuid: 96872831-bb51-4c68-86e8-1c5867c71afb
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: cwd_base_bootstrap_local_tasks
 theme: cwd_base_bootstrap
 region: header
-weight: 10
+weight: -9
 provider: null
 plugin: local_tasks_block
 settings:

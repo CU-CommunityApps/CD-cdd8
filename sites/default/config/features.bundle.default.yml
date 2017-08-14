@@ -1,4 +1,4 @@
-uuid: e0f0b844-f586-41c7-80f4-2ded4aa59fe2
+uuid: dd378fe5-f96b-438b-bcd7-5ffcd7994e49
 langcode: en
 status: true
 dependencies: {  }
@@ -17,13 +17,9 @@ assignments:
   base:
     types:
       config:
+        comment_type: comment_type
         node_type: node_type
-        block_content_type: block_content_type
-        media_bundle: media_bundle
-        taxonomy_vocabulary: taxonomy_vocabulary
       content:
-        menu_link_content: menu_link_content
-        file: file
         user: user
     enabled: true
     weight: -2

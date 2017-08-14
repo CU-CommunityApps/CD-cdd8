@@ -1,4 +1,4 @@
-uuid: 86f4b459-31c7-4afb-87c2-4358bb3ee4b2
+uuid: cf0172b7-12fa-4a2a-85f0-b9c39806d82a
 langcode: en
 status: true
 dependencies:
@@ -17,7 +17,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: sThUZO9H0Q-ZaW3S_tiyetyDnhTg86F7etxWrhWMKw4
+  default_config_hash: 4PQJbBv56cYG_5s6MLRCiIxB8sW7mjwo2ptXa2b7ilM
 id: node.news.teaser
 targetEntityType: node
 bundle: news

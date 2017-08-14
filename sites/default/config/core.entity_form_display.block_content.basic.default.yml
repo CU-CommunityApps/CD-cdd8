@@ -1,4 +1,4 @@
-uuid: fd5f7b48-07e3-4296-9737-c9f40b016e22
+uuid: 784c00ae-cfb5-4125-afcb-b52ac8ee6924
 langcode: en
 status: true
 dependencies:
@@ -7,8 +7,6 @@ dependencies:
     - field.field.block_content.basic.body
   module:
     - text
-_core:
-  default_config_hash: e1Nu5xXAuF_QplbBUhQBPLnYWvHtDX0MkZnpuCiY8uM
 id: block_content.basic.default
 targetEntityType: block_content
 bundle: basic

@@ -1,4 +1,4 @@
-uuid: a02905a7-3109-4ed4-9e7d-856c2e8cc53a
+uuid: a64fd676-12d7-40d8-94dd-1280d7e0d1ec
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - text
 _core:
-  default_config_hash: uOzGtLN1-M-2q6v6KgbnQGGBVezdpR4EDZzFFXxx1Lw
+  default_config_hash: A-QzoRxRpVHgG8Y9y0KwLqptqPGjikQrW-4oFBXvTwE
 id: node.news.field_teaser
 field_name: field_teaser
 entity_type: node

@@ -1,4 +1,4 @@
-uuid: 3c141a87-b426-4910-beae-bb5d4dfb2d10
+uuid: af7e413e-483f-48f0-8fed-d6c4a8f0bf30
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
   module:
     - text
 _core:
-  default_config_hash: 40huqnTcsS3mmBpiK0zzoIFtsIDzihyE-i8l0LeqmaM
+  default_config_hash: y-zNkvJYdUY9y9vtaAtyj_9hpyMjkrQ1zPkkKEsnnXo
 id: taxonomy_term.tags.default
 targetEntityType: taxonomy_term
 bundle: tags

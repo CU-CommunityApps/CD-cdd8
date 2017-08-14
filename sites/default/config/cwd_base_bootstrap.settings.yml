@@ -4,12 +4,15 @@ forms_smart_descriptions: 0
 table_hover: 0
 navbar_position: static-top
 _core:
-  default_config_hash: VUQUQUHECMPOmvm_68cRGAzrwneeoBtA8mLL9z01k2A
+  default_config_hash: aJuB1tbz7LNWOtDgHkkKXkpxsgOLv3vTklO4MtwEaV0
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'http://cdd8.alison/themes/bootstrap/favicon.ico'
+  url: 'http://doggo-cdd8.pantheonsite.io/themes/cwd_base_bootstrap/favicon.ico'
   use_default: true
+schemas:
+  bootstrap: 8000
+  cwd_base_bootstrap: 8000
 features:
   comment_user_picture: true
   comment_user_verification: true
@@ -19,6 +22,6 @@ logo:
   path: ''
   url: ''
   use_default: true
-schemas:
-  bootstrap: 8000
-  cwd_base_bootstrap: 8000
+cwd_base_bootstrap_h2: 'The Gold Copy'
+cwd_base_bootstrap_h3: 'Subheading for the site goes here'
+table: ''

@@ -1,4 +1,4 @@
-uuid: cc79cc03-3a2d-4156-b785-1a0e92eb5249
+uuid: 16a59042-6c77-4032-8190-be95b3abb1a8
 langcode: en
 status: true
 dependencies:
@@ -13,8 +13,8 @@ id: paragraph.slideshow_slide.field_slide_link
 field_name: field_slide_link
 entity_type: paragraph
 bundle: slideshow_slide
-label: 'Slide Link'
-description: 'If filled in, the title and/or caption will be a clickable link. <code><b>Hint:</b> Requires a title and/or caption be present. If not, Image Alt Text should be provided.</code>'
+label: 'Slide link'
+description: 'If filled in, the title and/or caption will be a clickable link. <code><b>Hint:</b> Requires a title and/or caption be present. If not, <i>Image alt text</i> should be provided.</code>'
 required: false
 translatable: false
 default_value: {  }

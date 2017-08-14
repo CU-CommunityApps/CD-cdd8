@@ -1,4 +1,4 @@
-uuid: c8defff0-0972-4a11-a7d8-f2eabeb1269d
+uuid: 08f90220-538d-4513-8841-fb97a6a619fb
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: tCpyYS73wAZ1fb0Bj9GmdF5cRTvwzBT0u2ija75krCI
+  default_config_hash: pQRxdUjIOa7m70Ic41HHJvgnKid2XWvn-t9sdtJ9Xe8
 id: node.entity_browser.default
 targetEntityType: node
 bundle: entity_browser

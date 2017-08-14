@@ -1,4 +1,4 @@
-uuid: d24e8df4-771c-4c92-a675-8c39c60d612e
+uuid: 841d2b5e-b39d-4b15-bb86-d7dec3808751
 langcode: en
 status: true
 dependencies:
@@ -26,7 +26,7 @@ content:
     region: content
   field_gallery_image:
     weight: 102
-    label: above
+    label: hidden
     settings:
       image_style: ''
       image_link: ''

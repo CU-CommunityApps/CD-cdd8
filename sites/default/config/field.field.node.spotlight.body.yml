@@ -1,4 +1,4 @@
-uuid: 21578bcd-c3f3-425d-9c9c-7354e36dcc27
+uuid: e645c945-73ae-4463-bae4-c3a8c6f6bf82
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - text
 _core:
-  default_config_hash: AEMzDM8TIA6d8M5F25uN9hQsIZRpZ2dYWBFyxl1FAZ8
+  default_config_hash: dOZRVg8v5NlqJ5NiM4AOEtDfdklTDL_EZyr6SL-3KLg
 id: node.spotlight.body
 field_name: body
 entity_type: node

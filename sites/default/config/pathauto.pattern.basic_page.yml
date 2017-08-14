@@ -1,11 +1,9 @@
-uuid: 12451a36-cdbe-409a-a20f-221233089090
+uuid: 8b413cd4-055b-4c65-8b59-baa0da38eaef
 langcode: en
 status: true
 dependencies:
   module:
     - node
-_core:
-  default_config_hash: obiWUup2p-FtsslnnEbD1lqFc7LWhnKXBT2i1hGwd4I
 id: basic_page
 label: 'Basic Page'
 type: 'canonical_entities:node'

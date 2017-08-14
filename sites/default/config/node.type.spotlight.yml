@@ -1,4 +1,4 @@
-uuid: 1f6999ea-3782-4a0b-9a61-d410b8ed19ab
+uuid: 483fd6ff-77ce-4ea3-8e26-fe3ba1c08144
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,9 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus: {  }
-    parent: ''
+    available_menus:
+      - main
+    parent: 'main:'
 _core:
   default_config_hash: kUn8H8Yf6jW4hNtg9WmssNNRCDJUsSTa0IcB-y3LRig
 name: Spotlight

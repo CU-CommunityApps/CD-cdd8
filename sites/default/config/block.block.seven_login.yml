@@ -1,9 +1,8 @@
-uuid: 122fb05e-3f20-42bc-969e-d3d9b4492dee
+uuid: 85034b19-a228-4069-be5c-a2f47732fcd1
 langcode: en
 status: true
 dependencies:
   module:
-    - system
     - user
   theme:
     - seven
@@ -20,9 +19,4 @@ settings:
   label: 'User login'
   provider: user
   label_display: visible
-visibility:
-  request_path:
-    id: request_path
-    pages: "/node/add/*\r\n/node/*/edit"
-    negate: true
-    context_mapping: {  }
+visibility: {  }

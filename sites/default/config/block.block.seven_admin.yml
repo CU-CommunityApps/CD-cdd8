@@ -1,4 +1,4 @@
-uuid: 672b1849-8eb5-4444-b07e-903d6eb587e3
+uuid: dc98cea7-8453-4313-9ae1-0cff7090cd8e
 langcode: en
 status: true
 dependencies:
@@ -23,9 +23,4 @@ settings:
   label_display: visible
   level: 1
   depth: 0
-visibility:
-  request_path:
-    id: request_path
-    pages: "/node/add/*\r\n/node/*/edit"
-    negate: true
-    context_mapping: {  }
+visibility: {  }

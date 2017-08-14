@@ -1,4 +1,4 @@
-uuid: 4dbb0e65-a310-44ba-b027-ed3c76904fa3
+uuid: 3691d40a-5355-420d-b47e-6acc31e5af9f
 langcode: en
 status: true
 dependencies:
@@ -6,6 +6,8 @@ dependencies:
     - field.storage.node.field_categories
     - node.type.spotlight
     - taxonomy.vocabulary.categories
+_core:
+  default_config_hash: BWfur6ECrP2gMnoGQj8FB85cLvI71rssG7fVUhRsjXw
 id: node.spotlight.field_categories
 field_name: field_categories
 entity_type: node

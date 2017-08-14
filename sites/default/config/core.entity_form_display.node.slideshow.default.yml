@@ -1,4 +1,4 @@
-uuid: 61b5efd0-a288-4570-a09c-a989e82cab49
+uuid: 8fc06198-2657-42df-a093-7c54589c5846
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
     - paragraphs
     - path
 _core:
-  default_config_hash: NH7EZEhEqIkJ50baaAsL3mrO1oQtyan6r_lW17VJL3o
+  default_config_hash: 9XjVK-RztEem-8ylpkOYpmnPG8CjpbzonkOFDzdXi8I
 id: node.slideshow.default
 targetEntityType: node
 bundle: slideshow

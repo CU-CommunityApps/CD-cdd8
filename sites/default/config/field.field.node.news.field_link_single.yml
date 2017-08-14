@@ -1,4 +1,4 @@
-uuid: 80ac377b-4f98-4f50-b54c-d035a0ea75c8
+uuid: b81a4f61-6b58-48ba-b9a4-a495c01117e6
 langcode: en
 status: true
 dependencies:
@@ -7,6 +7,8 @@ dependencies:
     - node.type.news
   module:
     - link
+_core:
+  default_config_hash: 6YPQze8sFo7BRCunABiVNq9BAg4lz8iGRMJJhMhqhvQ
 id: node.news.field_link_single
 field_name: field_link_single
 entity_type: node

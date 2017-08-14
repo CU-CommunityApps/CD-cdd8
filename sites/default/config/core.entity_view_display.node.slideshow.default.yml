@@ -1,4 +1,4 @@
-uuid: 18c97acb-ba44-449d-9143-cd55bdf2fcac
+uuid: 30fef4fc-baed-4870-85ee-9e9f00972d74
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
     - entity_reference_revisions
     - user
 _core:
-  default_config_hash: nkgd3enIucvwYHXtmLhtaeSnnHnOaoFV-qPPUCQL6rA
+  default_config_hash: F2qjv-3GazppRbNb2IP1UgI8PQ_XeTDe2hLxtU1-oms
 id: node.slideshow.default
 targetEntityType: node
 bundle: slideshow

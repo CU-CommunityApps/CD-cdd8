@@ -1,9 +1,9 @@
-uuid: 15146a69-753a-4429-9b6e-67af46719916
+uuid: 37d71820-320a-4f47-be97-fd3acaa85c37
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: Eu8CvZYqHh4Zx02qu1Xf9a7QC3JnDQTOZmSWkD8h4ic
+  default_config_hash: YQ1mrj3kLyZz-yBg6q_j4vAHspsdMke4V7P51nxUce0
 name: Doggo
 machine_name: doggo
 description: ''
@@ -83,10 +83,16 @@ assignments:
     curated: true
     standard:
       files: true
-      dependencies: false
+      dependencies: true
     types:
-      config: {  }
-    enabled: true
+      config:
+        block: block
+        language_content_settings: language_content_settings
+        configurable_language: configurable_language
+        migration: migration
+        shortcut_set: shortcut_set
+        tour: tour
+    enabled: false
     weight: 10
   site:
     types:

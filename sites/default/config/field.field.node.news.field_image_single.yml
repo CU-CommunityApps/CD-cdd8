@@ -1,4 +1,4 @@
-uuid: 25279ad0-7339-4c96-b481-4f425d0f0a77
+uuid: 56ef1718-197f-4639-a6bf-c6ee869d470d
 langcode: en
 status: true
 dependencies:
@@ -7,6 +7,8 @@ dependencies:
     - node.type.news
   module:
     - image
+_core:
+  default_config_hash: Ek4oWstasza_vB48edtspV9sWrfUxHvsyemg-Ilfz34
 id: node.news.field_image_single
 field_name: field_image_single
 entity_type: node

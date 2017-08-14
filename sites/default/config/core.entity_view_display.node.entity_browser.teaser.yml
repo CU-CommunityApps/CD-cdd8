@@ -1,4 +1,4 @@
-uuid: 3eacfc16-7af2-4470-a461-fe4cc09fdd1e
+uuid: 85d28156-62a3-488b-8ba2-3050be351d60
 langcode: en
 status: false
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: iHWr3bBfkyCzI9LvbYo-mk0FrUCc7fOt7dnnWH3S9Gw
+  default_config_hash: j6p3cFdBNTl8Uie3QXRrLKMcrrofIe5D_WoHctCFzHs
 id: node.entity_browser.teaser
 targetEntityType: node
 bundle: entity_browser

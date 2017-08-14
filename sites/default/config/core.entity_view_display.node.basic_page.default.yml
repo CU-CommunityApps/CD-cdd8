@@ -1,16 +1,18 @@
-uuid: b1775ff2-06db-42c2-a7c7-498503fb6d2e
+uuid: 6a9022ca-d72b-48f2-8d01-948c3b65c2c2
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.basic_page.body
+    - field.field.node.basic_page.field_paragraphs
     - field.field.node.basic_page.field_teaser
     - node.type.basic_page
   module:
+    - entity_reference_revisions
     - text
     - user
 _core:
-  default_config_hash: eG16F0lchErhBxK43GcG8h0myTS0ya-YOGUGJRxl7aU
+  default_config_hash: dWgOhCksEWmD-mXRCPjnAs023mxUEvsBTEyc_xLEtgE
 id: node.basic_page.default
 targetEntityType: node
 bundle: basic_page
@@ -21,6 +23,15 @@ content:
     type: text_default
     weight: 2
     settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_paragraphs:
+    type: entity_reference_revisions_entity_view
+    weight: 4
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
     third_party_settings: {  }
     region: content
   links:

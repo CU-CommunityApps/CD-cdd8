@@ -1,4 +1,4 @@
-uuid: 8a020b7a-39f0-430b-9615-c023900de128
+uuid: e6e083f0-b31a-47d7-8be0-72c9f810c590
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: cwd_base_bootstrap_messages
 theme: cwd_base_bootstrap
 region: header
-weight: -50
+weight: -9
 provider: null
 plugin: system_messages_block
 settings:

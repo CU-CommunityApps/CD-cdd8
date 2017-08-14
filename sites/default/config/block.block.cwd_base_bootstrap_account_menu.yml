@@ -1,4 +1,4 @@
-uuid: a6a2f444-99ef-48cb-94dd-da17febf40df
+uuid: 143b5e75-aa6d-4739-bc25-e9e90935b9e8
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ _core:
 id: cwd_base_bootstrap_account_menu
 theme: cwd_base_bootstrap
 region: navigation_collapsible
-weight: 11
+weight: -9
 provider: null
 plugin: 'system_menu_block:account'
 settings:

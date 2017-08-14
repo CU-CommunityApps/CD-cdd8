@@ -1,4 +1,4 @@
-uuid: 53736226-d852-4cda-974c-7bac26bd7187
+uuid: b17a709a-a775-4658-b3a3-9cdb47c17b5a
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
   module:
     - user
 _core:
-  default_config_hash: bxNl4sNLf0e1hqR6gIj0QMBh9wRn749wv1GfdhbHteQ
+  default_config_hash: U5U0V4tMNaWnGaEUXVzGW8eqTfz9t2ZzEa0-hI1gmuY
 id: node.slideshow.teaser
 targetEntityType: node
 bundle: slideshow

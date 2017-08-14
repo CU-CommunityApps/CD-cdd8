@@ -1,4 +1,4 @@
-uuid: 011aed76-c91f-4d86-8735-edf0b4698fe1
+uuid: 6ac17f63-8172-4e80-b5ae-cabfcbd52f00
 langcode: en
 status: true
 dependencies:
@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.news.field_categories
     - field.field.node.news.field_image_single
     - field.field.node.news.field_link_single
+    - field.field.node.news.field_paragraphs
     - field.field.node.news.field_tags
     - field.field.node.news.field_teaser
     - image.style.thumbnail
@@ -14,10 +15,11 @@ dependencies:
   module:
     - image
     - link
+    - paragraphs
     - path
     - text
 _core:
-  default_config_hash: zNLvMdUBNgO0WNE-SNdREo6QLV5EQMMCNb4Mli5QvNw
+  default_config_hash: iPS8U15-URzSDT5zOpkk-oQQyNZfTaAy_Z40iGLUFIE
 id: node.news.default
 targetEntityType: node
 bundle: news
@@ -34,7 +36,7 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 8
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -60,6 +62,18 @@ content:
     third_party_settings: {  }
     type: link_default
     region: content
+  field_paragraphs:
+    weight: 7
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: select
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
   field_tags:
     weight: 6
     settings: {  }
@@ -76,7 +90,7 @@ content:
     region: content
   path:
     type: path
-    weight: 9
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -90,7 +104,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 7
+    weight: 8
     settings:
       match_operator: CONTAINS
       size: 60

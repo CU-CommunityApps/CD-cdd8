@@ -1,4 +1,4 @@
-uuid: 6aeae76a-3b90-4ecb-8bbc-dd0db8376821
+uuid: 9b851726-f33a-4d08-ac29-b7e4344d9d82
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ third_party_settings:
     available_menus: {  }
     parent: ''
 _core:
-  default_config_hash: YWnG6GzTrFBLanm6AsDcBdWZ9oBt5KC2I0gsIcwJMm4
+  default_config_hash: LF7w5qZlLhuiOAjSMWlzUSM3K5JtsrROMb_RxbrWkMA
 name: Slideshow
 type: slideshow
 description: 'An accessible, responsive slideshow of images with titles and captions.'

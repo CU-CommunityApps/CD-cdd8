@@ -1,4 +1,4 @@
-uuid: 94b60cc2-0082-414f-bb04-e5df7ccd4647
+uuid: dc0b0947-fec9-45e5-9a7f-df372518f27f
 langcode: en
 status: true
 dependencies:
@@ -16,7 +16,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: U93UzrXb8BpLLsBCSDFZInqgd8HAOqgd1mgKFYdRleA
+  default_config_hash: HMJMGW64y-19sq83amcHvhY-lL11La2sJaghvUi09Yo
 id: node.spotlight.default
 targetEntityType: node
 bundle: spotlight

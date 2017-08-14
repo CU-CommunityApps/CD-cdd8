@@ -1,4 +1,4 @@
-uuid: 0f84f3d2-ee7c-4c98-b739-557f7c71bcc2
+uuid: b63bdf65-a1d4-4f7a-a08e-1d1eb571a619
 langcode: en
 status: true
 dependencies:
@@ -6,6 +6,8 @@ dependencies:
     - field.storage.node.field_tags
     - node.type.news
     - taxonomy.vocabulary.tags
+_core:
+  default_config_hash: lAU4AVhALeTXpQ9q3LY7-8MfQ8cMihc2OR4OP1kdeuE
 id: node.news.field_tags
 field_name: field_tags
 entity_type: node

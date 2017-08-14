@@ -1,4 +1,4 @@
-uuid: 24b1cbf3-bfed-4d2b-9ae4-e82871257215
+uuid: 44e526ce-bf0a-41db-a200-7d1089c8e290
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ dependencies:
     - image
     - link
 _core:
-  default_config_hash: yVIn4nuBALuRBy0TcSkgHPRvPdYO2Q5oRVxFb5Q9FSY
+  default_config_hash: 1knkdBPT7ImoDziCTp_3FCAOsT2jBUx5oJMZy6V4PTQ
 id: paragraph.slideshow_slide.default
 targetEntityType: paragraph
 bundle: slideshow_slide

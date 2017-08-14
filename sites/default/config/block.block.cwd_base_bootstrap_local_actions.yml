@@ -1,4 +1,4 @@
-uuid: 261d71b6-ad30-4282-9708-2ee1288da924
+uuid: 2be2d9c5-3552-43c2-8a24-e73aeb86b170
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: cwd_base_bootstrap_local_actions
 theme: cwd_base_bootstrap
 region: header
-weight: 20
+weight: -9
 provider: null
 plugin: local_actions_block
 settings:
