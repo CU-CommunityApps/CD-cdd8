@@ -1,4 +1,0 @@
-bundle: doggo
-excluded:
-  - cwd_base_bootstrap.settings
-required: true

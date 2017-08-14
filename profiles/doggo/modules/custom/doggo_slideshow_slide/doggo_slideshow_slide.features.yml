@@ -1,6 +1,0 @@
-bundle: doggo
-excluded:
-  - field.storage.paragraph.field_slide_caption
-  - field.storage.paragraph.field_slide_link
-  - field.storage.paragraph.field_slide_title
-required: true

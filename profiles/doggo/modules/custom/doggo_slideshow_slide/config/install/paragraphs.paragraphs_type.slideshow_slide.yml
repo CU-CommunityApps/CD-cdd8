@@ -1,6 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: slideshow_slide
-label: 'Slideshow Slide'
-behavior_plugins: {  }
