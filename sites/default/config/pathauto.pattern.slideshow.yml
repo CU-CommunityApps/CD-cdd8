@@ -1,0 +1,24 @@
+uuid: c4154209-711e-4e71-9bc5-11b1a85e22a7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: tFDK6tgHfbi3yZKlHGQwmE2oB5BBOqmWdX61urGGusw
+id: slideshow
+label: Slideshow
+type: 'canonical_entities:node'
+pattern: 'slideshow/[node:title]'
+selection_criteria:
+  406e6f55-4c05-41f1-8bfb-cde1df362476:
+    id: node_type
+    bundles:
+      slideshow: slideshow
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 406e6f55-4c05-41f1-8bfb-cde1df362476
+selection_logic: and
+weight: -5
+relationships: {  }

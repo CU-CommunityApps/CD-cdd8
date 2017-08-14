@@ -1,0 +1,7 @@
+uuid: 7943b912-12f9-456f-a626-82fcc2d47454
+langcode: en
+status: true
+dependencies: {  }
+id: slideshow_ref
+label: 'Insert slideshow'
+behavior_plugins: {  }

@@ -1,0 +1,23 @@
+uuid: 44efe456-4348-4bd1-839d-b5d53de22c6e
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: 35seGtqTk_GlyJxfbdaASrjgLHuzR9IPc5yS38EHrZw
+id: paragraph.field_slide_caption
+field_name: field_slide_caption
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

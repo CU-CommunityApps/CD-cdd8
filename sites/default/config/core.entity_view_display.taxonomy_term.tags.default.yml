@@ -1,0 +1,23 @@
+uuid: 3c141a87-b426-4910-beae-bb5d4dfb2d10
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tags
+  module:
+    - text
+_core:
+  default_config_hash: 40huqnTcsS3mmBpiK0zzoIFtsIDzihyE-i8l0LeqmaM
+id: taxonomy_term.tags.default
+targetEntityType: taxonomy_term
+bundle: tags
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

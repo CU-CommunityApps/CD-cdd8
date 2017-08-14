@@ -1,0 +1,32 @@
+uuid: b1775ff2-06db-42c2-a7c7-498503fb6d2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.basic_page.body
+    - field.field.node.basic_page.field_teaser
+    - node.type.basic_page
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: eG16F0lchErhBxK43GcG8h0myTS0ya-YOGUGJRxl7aU
+id: node.basic_page.default
+targetEntityType: node
+bundle: basic_page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_teaser: true

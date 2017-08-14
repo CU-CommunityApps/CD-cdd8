@@ -1,0 +1,20 @@
+uuid: ba581396-74af-4c97-9d55-074995f1e895
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cwd_admin
+_core:
+  default_config_hash: z1tn8h8kG4RFQbmx4MU0F_6VhdvIbd3ClBAqH5lYiiE
+id: cwd_admin_page_title
+theme: cwd_admin
+region: content
+weight: -4
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

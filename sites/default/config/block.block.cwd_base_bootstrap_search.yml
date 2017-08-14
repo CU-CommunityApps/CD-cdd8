@@ -1,0 +1,22 @@
+uuid: fc09192e-e044-4eb9-8870-a6db6a030aac
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - cwd_base_bootstrap
+_core:
+  default_config_hash: Xa4zgNXl4tCmWRAKQKp7onX2d-xFp9KYFO-u_IeJeRY
+id: cwd_base_bootstrap_search
+theme: cwd_base_bootstrap
+region: sidebar_second
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

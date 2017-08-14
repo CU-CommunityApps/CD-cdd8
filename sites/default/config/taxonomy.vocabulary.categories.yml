@@ -1,0 +1,11 @@
+uuid: 635adedd-c070-45e3-aed1-ca62f7f23354
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: UPk3B5nIXYhRq2_B3Dz6JBxFo9Be02HByePozmICQg0
+name: Categories
+vid: categories
+description: 'Categories vocab description goes here.'
+hierarchy: 0
+weight: 0

@@ -1,0 +1,19 @@
+uuid: 412c80f6-5d9a-485e-a1e2-7c20afde8e6f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: 6mmc4U3Symmz9C6nWPKIMOq0qF3trmRN4OBPCCp3gSQ
+name: Gallery
+type: gallery
+description: 'A collection of images and/or videos (NYI) displayed for browsing in a single interface.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

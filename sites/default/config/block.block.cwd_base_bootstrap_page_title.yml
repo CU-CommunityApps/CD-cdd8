@@ -1,0 +1,20 @@
+uuid: 2fbb1860-a4b3-43ee-ab42-087e3f3b6fa9
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cwd_base_bootstrap
+_core:
+  default_config_hash: jwGWWAs1LP8Mpk6QLQS4gX-4Xftwg-oCv6e841MT2us
+id: cwd_base_bootstrap_page_title
+theme: cwd_base_bootstrap
+region: header
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

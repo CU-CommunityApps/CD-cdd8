@@ -1,0 +1,22 @@
+uuid: 08d50df5-baa5-4505-90eb-c185a797081c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cwd_base_bootstrap
+_core:
+  default_config_hash: pkmLKaP0UywWfmYE4xThKLbCUmz9DQwNMPbhVvk2bbQ
+id: cwd_base_bootstrap_breadcrumbs
+theme: cwd_base_bootstrap
+region: header
+weight: -100
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 3f4ee133-40c4-4101-8ee5-22e46d8d603e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_single
+    - node.type.spotlight
+  module:
+    - link
+_core:
+  default_config_hash: M6w0U96FeGSNBbesYr0QduDEHx5W7WLLYi6NFbt6iXs
+id: node.spotlight.field_link_single
+field_name: field_link_single
+entity_type: node
+bundle: spotlight
+label: 'Spotlight link'
+description: 'Use this field if the Spotlight item is just a link, <strong>instead of using the Body field</strong>.<br /><big>[IGNORE FOR NOW] <strong>For links to internal pages</strong> on this same website, do not enter manually, use the <strong>Search</strong> button.[/IGNORE FOR NOW]</big>'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

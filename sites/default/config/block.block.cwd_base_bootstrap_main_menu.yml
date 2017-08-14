@@ -1,0 +1,26 @@
+uuid: 6f045ac2-bd0e-4241-b56a-99af6fcc3109
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - cwd_base_bootstrap
+_core:
+  default_config_hash: J4P9c0pKtgla2FI0Ce1_gbbSlroLAnJqqsxlAm1sk3E
+id: cwd_base_bootstrap_main_menu
+theme: cwd_base_bootstrap
+region: navigation_collapsible
+weight: 10
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+visibility: {  }
