@@ -2,6 +2,8 @@ uuid: 465a90ed-8cb5-4fa2-b08a-16920edf9e2e
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: nzxwxQrCX0_n3h-wBwVQZayDj5V-JnNnnrB6ByC9F_Q
 name: gallery_thumbnail
 label: 'Gallery Thumbnail (240x240)'
 effects:
